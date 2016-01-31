@@ -1,0 +1,17 @@
+{
+  "name": "week-four-hw",
+  "version": "1.0.0",
+  "description": "Week Four Homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yancyshmancy@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.1.1"
+  }
+}
