@@ -58,7 +58,7 @@ p {
     font-family: 'Open Sans';
     margin: 0;
     padding: 0 20px;
-    font-weight: 400;
+    font-weight: 400;    
 }
 
 h2,    
@@ -190,7 +190,7 @@ header {
             }
             
             @include bp-large {
-                position: absolute;
+                position: relative;
                 top: 0;
                 left: 0;
             }
@@ -241,6 +241,7 @@ header {
             list-style-type: none;
             display: inline;
             padding: 33px 5px 15px 5px;
+            border-bottom: 2px solid transparent;
             
             &:hover,
             &.active {
@@ -249,9 +250,10 @@ header {
             }
             
             @include bp-large {
+                float: left;
                 display: block;
                 text-align: center;
-                margin: 20px 0;
+                margin: 10px 0;
                 width: 100%;
             }
             
@@ -263,16 +265,14 @@ header {
                 color: white;
                 text-transform: uppercase;
                 font-family: 'Open Sans';
-                border-bottom: 2px solid transparent;
-                
-                
                 
                 @include bp-large {
                     float: left;
+                    width: 100%;
                     font-size: 30px;
                     width: 100%;
                     border-radius: 0px;
-                    padding: 6px 9px;
+                    padding: 8px 0;
                 }
             }
         }
