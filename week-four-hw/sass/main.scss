@@ -51,12 +51,14 @@ h3,
 h4 {
     font-family: 'Oswald';
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 p {
     font-family: 'Open Sans';
     margin: 0;
     padding: 0 20px;
+    font-weight: 400;
 }
 
 h2,    
@@ -130,17 +132,19 @@ textarea {
     
      a {
         color: $white;
+        
          
-         &:hover {
-             color: $light-blue-color;
+        &:hover {
+            color: $light-blue-color;
              
-             &>i {
-                 border-bottom: 2px solid $white;
-             }
-         }
+            &>i {
+                border-bottom: 2px solid $white;
+            }
+        }
 
         i {
             padding: 20px 20px;
+            border-bottom: 2px solid transparent;
         }
     }
 }
@@ -169,6 +173,10 @@ header {
             padding: 0 130px;
             z-index: 999999;
             
+            .logo {
+                padding-left: 50px;
+            }
+            
             a {
                 padding: 100% 9px 14px 9px;
                 
@@ -187,8 +195,6 @@ header {
                 left: 0;
             }
         }
-        
-        
     }
     
     .row:nth-of-type(1) {
@@ -211,6 +217,7 @@ header {
         width: 10%;
         font-size: 2em;
         margin-top: 20px;
+        padding-left: 10px;
         
         @include bp-large {
             width: 100%;
@@ -233,7 +240,13 @@ header {
         li {
             list-style-type: none;
             display: inline;
-            padding: 0 7px;
+            padding: 33px 5px 15px 5px;
+            
+            &:hover,
+            &.active {
+                border-bottom: 2px solid $white;
+                background:$light-blue-color;
+            }
             
             @include bp-large {
                 display: block;
@@ -245,17 +258,14 @@ header {
             a {
                 text-decoration: none;
                 font-weight: 300;
-                padding: 100% 9px 8px 9px;
+                padding: 8px 9px;
                 font-size: 1em;
                 color: white;
                 text-transform: uppercase;
                 font-family: 'Open Sans';
                 border-bottom: 2px solid transparent;
                 
-                &:hover {
-                    border-bottom: 2px solid $white;
-                    background:$light-blue-color;
-                }
+                
                 
                 @include bp-large {
                     float: left;
@@ -370,6 +380,19 @@ header {
     .row {
         margin-bottom: 60px;
     }
+    
+    .btn {
+        width: 50%;
+        float: right;
+        margin-right: 0;
+        margin-top: 10px;
+        background-color: $purple-color;
+        
+        @include bp-large {
+            width: 80%;
+            margin: 10px 10%;
+        }
+    }
 }
 
 footer {
@@ -391,5 +414,9 @@ footer {
         margin: 20px 0;
         font-size: 0.8em;
         padding-left: 0;
+    }
+    
+    .social {
+        padding-bottom: 20px;
     }
 }

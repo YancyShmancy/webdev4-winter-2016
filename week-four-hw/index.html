@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Week 4 Homework</title>
     
+    
     <link href='https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,700,300|Oswald:400,700' rel='stylesheet' type='text/css'>
     
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -13,17 +14,17 @@
 </head>
 <body>
     
-    <header>
+    <header id="home">
         <div class="row" id="navigation">
             <div class="col-12">
                 <h1 class="logo">
                     Logo
                 </h1>
                 <ul class="nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Social</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -33,10 +34,10 @@
                 <h1>Premium Quality &amp; Design</h1>
                 <div class="underline"></div>
                 <div class="social">
-                    <a href=""><i class="fa fa-facebook fa-2x"></i></a>
-                    <a href=""><i class="fa fa-linkedin fa-2x"></i></a>
-                    <a href=""><i class="fa fa-twitter fa-2x"></i></a>
-                    <a href=""><i class="fa fa-google-plus fa-2x"></i></a>
+                    <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                    <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
                 </div>
             </div>
         </div>
@@ -85,7 +86,7 @@
                 </div>
                 <h3>We Send Messages</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim commodi neque similique deleniti.</p>
-                <a href="" class="btn hvr-sweep-to-right">See More</a>
+                <a href="" class="btn hvr-sweep-to-bottom">See More</a>
             </div>
             <div class="col-3">
                 <div class="img-container">
@@ -93,7 +94,7 @@
                 </div>
                 <h3>We Like Diamonds</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim commodi neque similique deleniti.</p>
-                <a href="" class="btn hvr-sweep-to-right">See More</a>
+                <a href="" class="btn hvr-sweep-to-bottom">See More</a>
             </div>
             <div class="col-3">
                 <div class="img-container">
@@ -101,7 +102,7 @@
                 </div>
                 <h3>We Have Computers</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim commodi neque similique deleniti.</p>
-                <a href="" class="btn hvr-sweep-to-right">See More</a>
+                <a href="" class="btn hvr-sweep-to-bottom">See More</a>
             </div>
             <div class="col-3">
                 <div class="img-container">
@@ -109,13 +110,13 @@
                 </div>
                 <h3>Bar Graphs</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim commodi neque similique deleniti.</p>
-                <a href="" class="btn hvr-sweep-to-right">See More</a>
+                <a href="" class="btn hvr-sweep-to-bottom">See More</a>
             </div>
         </div>
         
         <div class="row">
             <div class="col-6 offset-3 centered">
-                <a href="" class="btn big hvr-sweep-to-right">View Our Work</a>
+                <a href="" class="btn big hvr-shutter-out-horizontal">View Our Work</a>
             </div>
         </div>
     </section>
@@ -130,6 +131,8 @@
                 <input type="text" placeholder="Name">
                 <input type="text" placeholder="E-mail Address">
                 <textarea name="" placeholder="Your message..."></textarea>
+                
+                <a href="#" class="btn centered hvr-sweep-to-bottom">Send</a>
             </div>
             <div class="col-6">
                 <img src="./img/map.png" alt="">
@@ -140,10 +143,10 @@
     <footer class="centered">
         <div class="row">
             <div class="social">
-                <a href=""><i class="fa fa-facebook fa-2x"></i></a>
-                <a href=""><i class="fa fa-linkedin fa-2x"></i></a>
-                <a href=""><i class="fa fa-twitter fa-2x"></i></a>
-                <a href=""><i class="fa fa-google-plus fa-2x"></i></a>
+                <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
             </div>
             
             <div class="underline"></div>
@@ -153,6 +156,7 @@
     </footer>
     
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="./js/jquery.nav.js"></script>
     <script src="./js/main.js"></script>
     
 </body>
