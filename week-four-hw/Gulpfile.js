@@ -4,30 +4,19 @@ var concat = require('gulp-concat');
 
 var browserSync = require('browser-sync').create();
 
-gulp.task('styles', function() {
-    gulp.src('sass/**/*.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./css/'))
-});
-
-//Watch task
-gulp.task('default',function() {
-    gulp.watch('sass/**/*.scss',['styles']);
-});
-
-// Static Server + watching scss/html files
+// Static
 gulp.task('serve', ['sass'], function() {
     browserSync.init({
         server: "./"
     });
     gulp.watch("sass/**/*.scss", ['sass']);
-   gulp.watch("*.html").on('change', browserSync.reload);
+	gulp.watch("*.html").on('change', browserSync.reload);
 });
 
-// Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
     return gulp.src("sass/**/*.scss")
         .pipe(sass().on('error', sass.logError))
+        .pipe(concat('main.css'))
         .pipe(gulp.dest("./css/"))
         .pipe(browserSync.stream());
 });
