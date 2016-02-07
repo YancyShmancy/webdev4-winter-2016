@@ -1,0 +1,72 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/sidebar-nav";
+@import "partials/fonts";
+@import "partials/animations";
+
+#home {
+    background: 
+        -webkit-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(../assets/img/home-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+#big-header {
+    position: absolute;
+    top: 30%;
+    color: $white;
+
+    h1 {
+        font-size: 60px;
+        font-family: 'Liberator Heavy';
+
+        &::after {
+            content: "";
+            display: block;
+            height: 5px;
+            background-color: $white;
+            width: 225px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    h2 {
+        font-size: 20px;
+        font-family: 'Moms Typewriter';
+        text-transform: uppercase;
+        padding-top: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        font-family: 'American Typewriter';
+        padding: 10px 70px;
+
+        @include bp-large {
+            padding: 10px 15px;
+        }
+    }
+}
+
+#home-buttons {
+    position: absolute;
+    top: 60%;
+    
+    a.btn {
+        border: 1px solid $white;
+        border-radius: 0;
+        margin: 20px 20px;
+        color: $white;
+        font-family: 'Liberator Light';
+        transition: 0.2s color ease-in-out;
+        
+        &:hover {
+            color: $black;
+        }
+    }
+}

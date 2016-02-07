@@ -1,0 +1,11 @@
+@mixin bp-small {
+    @media (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+@mixin bp-large {
+    @media (max-width: $tablet-breakpoint) {
+        @content;
+    }
+}
