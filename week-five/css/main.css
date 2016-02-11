@@ -4571,24 +4571,26 @@ a.bg-danger:focus, a.bg-danger:hover {
   #wrapper .page-content-wrapper {
     width: 100%;
     position: absolute;
-    padding: 15px 0; }
+    padding: 0; }
     @media (min-width: 750px) {
       #wrapper .page-content-wrapper {
         position: relative; } }
+    #wrapper .page-content-wrapper .container-fluid {
+      padding: 0; }
     #wrapper .page-content-wrapper #menu-toggle {
       position: absolute;
-      top: 0;
+      top: 20px;
       left: 5px;
       width: auto;
       min-width: 145px;
       height: 75px;
-      border: 1px solid rgba(255, 255, 255, 0.5);
       font-size: 14px;
       padding: 5px 0;
       border-radius: 5px;
       outline: none;
       color: #fff;
-      font-family: 'Liberator Light'; }
+      font-family: 'Liberator Light';
+      z-index: 5; }
       #wrapper .page-content-wrapper #menu-toggle img {
         z-index: -2;
         float: left;
@@ -4651,7 +4653,8 @@ a.bg-danger:focus, a.bg-danger:hover {
     line-height: 26px;
     transition: 0.2s all ease-in-out; }
   .sidebar-nav li {
-    transition: 0.2s all ease-in-out; }
+    transition: 0.2s all ease-in-out;
+    margin: 5px 0; }
     .sidebar-nav li:hover, .sidebar-nav li.active {
       background: #fff; }
       .sidebar-nav li:hover > a, .sidebar-nav li.active > a {
@@ -4780,13 +4783,38 @@ a.bg-danger:focus, a.bg-danger:hover {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
-.hvr-sweep-to-bottom:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
+.hvr-sweep-to-bottom:hover {
   color: #000; }
 
-.hvr-sweep-to-bottom:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+.hvr-sweep-to-bottom:hover:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1); }
 
+/*******************
+Universal Styles
+*******************/
+h1, h2 {
+  font-family: 'Liberator Light';
+  letter-spacing: 2px; }
+
+h1 {
+  font-size: 5em; }
+
+h2 {
+  font-size: 3em; }
+
+p {
+  font-family: 'American Typewriter'; }
+
+.content {
+  padding-left: 30px;
+  margin: 40px 0;
+  border-left: 10px solid #000;
+  font-size: 1.5em; }
+
+/*******************
+Home Page
+*******************/
 #home {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/img/home-bg.png) no-repeat;
   background-position: center;
@@ -4834,3 +4862,26 @@ a.bg-danger:focus, a.bg-danger:hover {
     transition: 0.2s color ease-in-out; }
     #home-buttons a.btn:hover {
       color: #000; }
+
+/*******************
+About Us Page
+*******************/
+#about-us {
+  height: 100%;
+  background-color: #fff; }
+  #about-us .jumbotron {
+    border-radius: 0;
+    color: #fff;
+    height: 100vh;
+    background: url("../assets/img/restaurant-lights.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative; }
+    #about-us .jumbotron p {
+      font-family: 'Moms Typewriter';
+      text-transform: uppercase;
+      font-size: 2em; }
+    #about-us .jumbotron .main-title {
+      position: absolute;
+      left: 10%;
+      top: 30%; }
