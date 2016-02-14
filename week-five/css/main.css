@@ -4564,23 +4564,28 @@ a.bg-danger:focus, a.bg-danger:hover {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  height: 100%;
   position: relative; }
   @media (min-width: 750px) {
     #wrapper {
       padding-left: 250px; } }
   #wrapper .page-content-wrapper {
-    width: 100%;
-    position: absolute;
-    padding: 0; }
+    width: 100%; }
     @media (min-width: 750px) {
       #wrapper .page-content-wrapper {
         position: relative; } }
     #wrapper .page-content-wrapper .container-fluid {
       padding: 0; }
+    #wrapper .page-content-wrapper .container {
+      margin-top: 0;
+      padding: 20px 0; }
+      @media (max-width: 750px) {
+        #wrapper .page-content-wrapper .container {
+          margin-top: 75px; } }
     #wrapper .page-content-wrapper #menu-toggle {
-      position: absolute;
+      position: fixed;
       top: 20px;
-      left: 5px;
+      left: 270px;
       width: auto;
       min-width: 145px;
       height: 75px;
@@ -4589,17 +4594,30 @@ a.bg-danger:focus, a.bg-danger:hover {
       border-radius: 5px;
       outline: none;
       color: #fff;
-      font-family: 'Liberator Light';
-      z-index: 5; }
+      z-index: 5;
+      transition: left 0.5s ease; }
+      #wrapper .page-content-wrapper #menu-toggle.toggled {
+        left: 20px; }
+        @media (max-width: 750px) {
+          #wrapper .page-content-wrapper #menu-toggle.toggled {
+            left: 250px; } }
       #wrapper .page-content-wrapper #menu-toggle img {
         z-index: -2;
         float: left;
         height: 100%; }
-      #wrapper .page-content-wrapper #menu-toggle span {
+      #wrapper .page-content-wrapper #menu-toggle p {
         float: left;
         height: auto;
         width: 50%;
-        padding: 10px 10px; }
+        padding: 10px 10px;
+        font-family: 'Liberator Light' !important; }
+      @media (max-width: 750px) {
+        #wrapper .page-content-wrapper #menu-toggle {
+          width: 100%;
+          background-color: #000;
+          top: 0;
+          left: 0;
+          border-radius: 0; } }
   #wrapper.toggled {
     padding-left: 250px; }
     @media (min-width: 750px) {
@@ -4611,7 +4629,6 @@ a.bg-danger:focus, a.bg-danger:hover {
         #wrapper.toggled #sidebar-wrapper {
           width: 0; } }
     #wrapper.toggled .page-content-wrapper {
-      position: absolute;
       margin-right: -250px; }
       @media (min-width: 750px) {
         #wrapper.toggled .page-content-wrapper {
@@ -4627,6 +4644,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   margin-left: -250px;
   overflow-y: auto;
   background: #000;
+  border-right: 1px solid #fff;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -4686,7 +4704,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   .sidebar-footer .social {
     text-align: left;
     color: #fff;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #CE2927;
     padding: 10px 10px; }
     .sidebar-footer .social i {
       padding-right: 10px; }
@@ -4790,18 +4808,111 @@ a.bg-danger:focus, a.bg-danger:hover {
   -webkit-transform: scaleY(1);
   transform: scaleY(1); }
 
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default; }
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 3em;
+  text-align: left; }
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 60px);
+  -webkit-filter: grayscale(1);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-40px, 0, 0);
+  transform: translate3d(-40px, 0, 0); }
+
+.hovereffect h3 {
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  padding: 15% 0 10px 0;
+  text-align: left; }
+
+.hovereffect .overlay:before {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  border: 1px solid #CE2927;
+  content: '';
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-20px, 0, 0);
+  transform: translate3d(-20px, 0, 0); }
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  -webkit-filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0); }
+
+.hovereffect:hover img {
+  opacity: 0.6;
+  -webkit-filter: grayscale(0.5);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.hovereffect:hover .overlay:before,
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  -webkit-filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
 /*******************
 Universal Styles
 *******************/
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Liberator Light';
   letter-spacing: 2px; }
 
 h1 {
   font-size: 5em; }
+  @media (max-width: 750px) {
+    h1 {
+      font-size: 3em; } }
 
 h2 {
-  font-size: 3em; }
+  font-size: 3em;
+  color: #6C7A89;
+  margin-left: -30px;
+  border-left: 10px solid #CE2927;
+  padding-left: 20px; }
+
+h4 {
+  font-family: 'Moms Typewriter';
+  border-left: 5px solid #CE2927;
+  padding-left: 10px;
+  margin-left: -15px;
+  color: #6C7A89; }
+
+h5 {
+  font-family: 'Liberator Light'; }
 
 p {
   font-family: 'American Typewriter'; }
@@ -4809,8 +4920,74 @@ p {
 .content {
   padding-left: 30px;
   margin: 40px 0;
-  border-left: 10px solid #000;
+  border-left: 10px solid #CE2927;
   font-size: 1.5em; }
+
+.btn-primary {
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
+  border-radius: 0;
+  transition: all 0.2s ease; }
+  .btn-primary:hover {
+    background-color: #CE2927;
+    border-color: #fff; }
+
+span {
+  color: #CE2927; }
+
+.jumbotron {
+  border-radius: 0;
+  color: #fff;
+  height: 100vh;
+  position: relative; }
+  .jumbotron .main-title {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    border-left: 10px solid #CE2927;
+    padding-left: 30px;
+    width: auto; }
+    .jumbotron .main-title h1 {
+      width: 80%; }
+    .jumbotron .main-title > * {
+      transition: all 0.5s ease; }
+  .jumbotron p {
+    font-family: 'Moms Typewriter';
+    text-transform: capitalize;
+    font-size: 1.5em;
+    color: #fff; }
+
+.list-group {
+  border-radius: 0; }
+
+.list-group-item {
+  background-color: #6C7A89;
+  padding: 5px 5px;
+  border-radius: 0 !important;
+  font-family: 'American Typewriter'; }
+
+.page-content-wrapper > footer {
+  background-color: #6C7A89;
+  color: #fff; }
+  .page-content-wrapper > footer h4, .page-content-wrapper > footer h5 {
+    border-left: 0px;
+    color: #fff; }
+  .page-content-wrapper > footer h4 {
+    margin-left: 0;
+    padding-left: 0; }
+  .page-content-wrapper > footer h5 {
+    border-bottom: 2px solid #CE2927;
+    padding-bottom: 5px; }
+  .page-content-wrapper > footer a {
+    color: #fff;
+    letter-spacing: 1px; }
+  .page-content-wrapper > footer .row:nth-of-type(3) {
+    border-top: 1px solid #000; }
+
+.row {
+  width: 100%;
+  margin: 0; }
 
 /*******************
 Home Page
@@ -4825,6 +5002,9 @@ Home Page
   position: absolute;
   top: 30%;
   color: #fff; }
+  @media (max-width: 750px) {
+    #big-header {
+      top: 20%; } }
   #big-header h1 {
     font-size: 60px;
     font-family: 'Liberator Heavy'; }
@@ -4832,7 +5012,7 @@ Home Page
       content: "";
       display: block;
       height: 5px;
-      background-color: #fff;
+      background-color: #CE2927;
       width: 225px;
       position: absolute;
       left: 50%;
@@ -4841,7 +5021,10 @@ Home Page
     font-size: 20px;
     font-family: 'Moms Typewriter';
     text-transform: uppercase;
-    padding-top: 20px; }
+    padding-top: 20px;
+    padding-left: 0;
+    border-left: 0px;
+    color: #fff; }
   #big-header p {
     font-size: 14px;
     font-family: 'American Typewriter';
@@ -4849,39 +5032,46 @@ Home Page
     @media (max-width: 750px) {
       #big-header p {
         padding: 10px 15px; } }
-
-#home-buttons {
-  position: absolute;
-  top: 60%; }
-  #home-buttons a.btn {
+  #big-header a.btn {
     border: 1px solid #fff;
     border-radius: 0;
     margin: 20px 20px;
     color: #fff;
     font-family: 'Liberator Light';
     transition: 0.2s color ease-in-out; }
-    #home-buttons a.btn:hover {
+    #big-header a.btn:hover {
       color: #000; }
+
+.row {
+  padding: 0 20px; }
 
 /*******************
 About Us Page
 *******************/
 #about-us {
-  height: 100%;
-  background-color: #fff; }
+  height: 100% !important;
+  background-color: #000;
+  color: #fff; }
   #about-us .jumbotron {
-    border-radius: 0;
-    color: #fff;
-    height: 100vh;
-    background: url("../assets/img/restaurant-lights.jpg") no-repeat;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/milwaukee.png") no-repeat;
     background-position: center;
+    background-size: cover; }
+    #about-us .jumbotron h1 {
+      width: 100%; }
+
+/*******************
+Reservations Page
+*******************/
+#reservations {
+  height: 100% !important;
+  background-color: #000;
+  color: #fff; }
+  #reservations .jumbotron {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/reservations.png") no-repeat;
     background-size: cover;
-    position: relative; }
-    #about-us .jumbotron p {
-      font-family: 'Moms Typewriter';
-      text-transform: uppercase;
-      font-size: 2em; }
-    #about-us .jumbotron .main-title {
-      position: absolute;
-      left: 10%;
-      top: 30%; }
+    background-position: center; }
+  #reservations form, #reservations ul {
+    font-family: 'American Typewriter'; }
+  #reservations #date-input,
+  #reservations #time-input {
+    height: 40px; }

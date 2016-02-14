@@ -4,6 +4,7 @@
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    height: 100%;
     
     position: relative;
     
@@ -13,8 +14,7 @@
     
     .page-content-wrapper {
         width: 100%;
-        position: absolute;
-        padding: 0;
+//        position: absolute;
         
         @include bp-small {
             position: relative;
@@ -24,10 +24,19 @@
             padding: 0;
         }
         
+        .container {
+            margin-top: 0;
+            padding: 20px 0;
+            
+            @include bp-large {
+                margin-top: 75px;
+            }
+        }
+        
         #menu-toggle {
-            position: absolute;
+            position: fixed;
             top: 20px;
-            left: 5px;
+            left: 270px;
             width: auto;
             min-width: 145px;
             height: 75px;
@@ -37,8 +46,16 @@
             border-radius: 5px;
             outline: none;
             color: $white;
-            font-family: 'Liberator Light';
             z-index: 5;
+            transition: left 0.5s ease;
+            
+            &.toggled {
+                left: 20px;
+                
+                @include bp-large {
+                    left: 250px;
+                }
+            }
 
             img {
                 z-index: -2;
@@ -46,11 +63,20 @@
                 height: 100%;
             }
             
-            span {
+            p {
                 float: left;
                 height: auto;
                 width: 50%;
                 padding: 10px 10px;
+                font-family: 'Liberator Light' !important;
+            }
+            
+            @include bp-large {
+                width: 100%;
+                background-color: $black;
+                top: 0;
+                left: 0;
+                border-radius: 0;
             }
         }
     }
@@ -71,7 +97,7 @@
         }
         
         .page-content-wrapper {
-            position: absolute;
+//            position: absolute;
             margin-right: -250px;
             
             @include bp-small {
@@ -91,6 +117,7 @@
     margin-left: -250px;
     overflow-y: auto;
     background: #000;
+    border-right: 1px solid $white;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -177,7 +204,7 @@
     .social {
         text-align: left;
         color: $white;
-        border-bottom: 1px solid $white;
+        border-bottom: 1px solid $red;
         
         padding: 10px 10px;
         
