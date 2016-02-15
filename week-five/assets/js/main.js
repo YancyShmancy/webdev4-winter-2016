@@ -1,10 +1,12 @@
-$(document).ready(function() {
+$(document).ready(function() {  
+    // Sidebar controls
     $('#menu-toggle').on('click', function(){
         $('#sidebar-wrapper').toggleClass('toggled');
         $('#wrapper').toggleClass('toggled');
         $('#menu-toggle').toggleClass('toggled');
     });
     
+    // Create google map based on coordinates
     function init_map() {
 		var var_location = new google.maps.LatLng(43.0406559,-87.912449);
  
@@ -21,19 +23,18 @@ $(document).ready(function() {
         var var_map = new google.maps.Map(document.getElementById("map-container"),
             var_mapoptions);
  
-		var_marker.setMap(var_map);	
- 
-      }
- 
-      google.maps.event.addDomListener(window, 'load', init_map);
+        var_marker.setMap(var_map);
+    }
     
-    // transition when changing pages
+    // Initiliaze google map on DOM
+    google.maps.event.addDomListener(window, 'load', init_map);
 });
 
+// Transition when changing pages
 $('body').fadeIn(400, function(){
     $('body').removeClass('transition');
 });
-// to fade out before redirect
+// To fade out before redirect
 $('.sidebar-nav a').click(function(e){
     redirect = $(this).attr('href');
     e.preventDefault();

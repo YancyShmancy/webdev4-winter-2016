@@ -9,3 +9,9 @@
         @content;
     }
 }
+
+%page-content {
+    height: 100% !important;
+    background-color: $black;
+    color: $white;
+}

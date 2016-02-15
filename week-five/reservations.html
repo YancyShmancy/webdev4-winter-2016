@@ -9,26 +9,26 @@
 </head>
 <body class="transition">
   
-    <div id="wrapper" class="clearfix">
+    <div id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand text-xs-center">
-                    <a href="#">
+                    <a href="./index.html">
                         <img src="./assets/img/logo.png" alt="">
                     </a>
                 </li>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="./index.html">Home</a>
                 </li>
                 <li>
-                    <a href="about-us.html">About Us</a>
+                    <a href="./about-us.html">About Us</a>
                 </li>
                 <li>
-                    <a href="secret-location.html">Secret Location</a>
+                    <a href="./secret-location.html">Secret Location</a>
                 </li>
                 <li class="active">
-                    <a href="reservations.html">Reservations</a>
+                    <a href="./reservations.html">Reservations</a>
                 </li>
                 
             </ul>
@@ -52,7 +52,7 @@ Milwaukee, WI </address>
         <!-- End #sidebar-wrapper -->
 
         <!-- Page Content -->
-        <div class="page-content-wrapper clearfix" id="reservations">
+        <div class="page-content-wrapper" id="reservations">
            
             <a role="button" class="hvr-shutter-in-vertical" id="menu-toggle">
                 <img src="./assets/img/fingerprint.png" alt="">
@@ -118,11 +118,11 @@ Milwaukee, WI </address>
 
                     <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="hovereffect">
-                            <img class="img-responsive" src="./assets/img/med1.jpg" alt="">
+                            <img class="img-responsive" src="./assets/img/mediterranean-sector/med1.jpg" alt="">
                                 <div class="overlay">
                                     <h3>Mediterranean Sector</h3>
                                     <p> 
-                                        <a role="button" data-toggle="modal" data-target=".bs-example-modal-lg">See Photos</a>
+                                        <a role="button" data-toggle="modal" data-target="#medi-modal">More Info</a>
                                     </p> 
                                 </div>
                         </div>
@@ -130,11 +130,11 @@ Milwaukee, WI </address>
 
                     <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="hovereffect">
-                            <img class="img-responsive" src="./assets/img/iando1.jpg" alt="">
+                            <img class="img-responsive" src="./assets/img/indoctrination-room/iando1.jpg" alt="">
                                 <div class="overlay">
                                     <h3>Indoctrination Room</h3>
                                     <p> 
-                                        <a href="#">See Photos</a>
+                                        <a role="button" data-toggle="modal" data-target="#indo-modal">More Info</a>
                                     </p> 
                                 </div>
                         </div>
@@ -142,11 +142,11 @@ Milwaukee, WI </address>
 
                     <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="hovereffect">
-                            <img class="img-responsive" src="./assets/img/news3.jpg" alt="">
+                            <img class="img-responsive" src="./assets/img/newsroom/news3.jpg" alt="">
                                 <div class="overlay">
                                     <h3>The Newsroom</h3>
                                     <p> 
-                                        <a href="#">See Photos</a>
+                                        <a role="button" data-toggle="modal" data-target="#newsroom-modal">More Info</a>
                                     </p> 
                                 </div>
                         </div>
@@ -154,11 +154,11 @@ Milwaukee, WI </address>
 
                     <div class="col-lg-3 col-md-6 col-xs-12">
                         <div class="hovereffect">
-                            <img class="img-responsive" src="./assets/img/safe2.jpg" alt="">
+                            <img class="img-responsive" src="./assets/img/safehouse/safe2.jpg" alt="">
                             <div class="overlay">
                                 <h3>The Safehouse</h3>
                                 <p> 
-                                    <a href="#">See Photos</a>
+                                    <a role="button" data-toggle="modal" data-target="#safehouse-modal">More Info</a>
                                 </p> 
                             </div>
                         </div>
@@ -296,17 +296,172 @@ Milwaukee, WI </address>
                     </div>
                 </div>
                 
-                <div class="row text-xs-center p-t-1">
-                    <p>&copy; 2016 Safe-House</p>
+                <div class="row text-xs-center text-md-left p-t-1">
+                    <div class="col-lg-11 col-lg-offset-1 col-xs-12">
+                        <p>&copy; 2016 Safe-House. All Rights Reserved.</p>
+                    </div>   
                 </div>
             </footer>
         </div>
-        
-        
+    </div>    
+    <!-- End Page Content -->
+    
+    <!-- Modals -->
+    <!-- Mediterranean Sector Modal -->
+    <div id="medi-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">The Mediterranean Sector</h4>
+                </div>
+                <div class="modal-body">
+                    <h5>Minimum: <span>25 Agents</span></h5>
+                    <h5>Maximum: <span>30 Agents</span></h5>
+                    <p>Where performing artists gather after the 
+  show. Home to the world's largest 
+  mechanical puzzle, good for hours of 
+  speculation.</p>
+            
+                    <button class="btn btn-primary btn-block m-b-2" data-toggle="collapse" data-target="#medi-modal-imgs">See Photos</button>
+                    
+                    <div id="medi-modal-imgs" class="collapse fade">
+                        <img src="./assets/img/mediterranean-sector/med1.jpg" alt="" class="img-fluid">
+         
+                        <img src="./assets/img/mediterranean-sector/med2.jpg" alt="" class="img-fluid">
+
+                        <img src="./assets/img/mediterranean-sector/med3.jpg" alt="" class="img-fluid">
+
+                        <img src="./assets/img/mediterranean-sector/med4.jpg" alt="" class="img-fluid">
+                    </div>
+            
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
     </div>
-        
-        
-        <!-- End Page Content -->
+    <!-- End Medi Sector Modal -->
+    
+    <!-- Indoctrination Room Modal -->
+    <div id="indo-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">The Indoctrination Room</h4>
+                </div>
+                <div class="modal-body">
+                    <h5>Minimum: <span>25 Agents</span></h5>
+                    <h5>Maximum: <span>50 Agents</span></h5>
+                    <p>The I &amp; O Room features Checkpoint 
+                    Charlie and a piece of the Berlin Wall.</p>
+
+                    <button class="btn btn-primary btn-block m-b-2" data-toggle="collapse" data-target="#indo-modal-imgs">See Photos</button>
+             
+                    <div class="collapse fade" id="indo-modal-imgs">
+                        <img src="./assets/img/indoctrination-room/iando1.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Indo Modal -->
+    
+    <!-- Newsroom Modal -->
+    <div id="newsroom-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+        <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">The Newsroom</h4>
+                </div>
+                <div class="modal-body">
+                    <h5>Minimum: <span>25 Agents</span></h5>
+                    <h5>Maximum: <span>80 Agents</span></h5>
+                    <p>Antique bar and dining room located in historic building is the home of the Milwaukee Press Club famous autograph and memorabilia collection. Wall opens to adjoining Mediterranean room for parties up to 120. Pssst! Secret access to the Safe House is concealed in the Newsroom. Standard entrance off Wells Street for your guests.</p>
+            
+                    <button class="btn btn-primary btn-block m-b-2" data-toggle="collapse" data-target="#nr-modal-imgs">See Photos</button>
+
+                    <div id="nr-modal-imgs" class="collapse fade">
+                        <img src="./assets/img/newsroom/news1.jpg" alt="" class="img-fluid">
+
+                        <img src="./assets/img/newsroom/news-2.jpg" alt="" class="img-fluid">
+
+                        <img src="./assets/img/newsroom/news3.jpg" alt="" class="img-fluid">
+
+                        <img src="./assets/img/newsroom/news4.jpg" alt="" class="img-fluid">
+
+                        <img src="./assets/img/newsroom/news5.jpg" alt="" class="img-fluid">
+
+                        <img src="./assets/img/newsroom/news6.jpg" alt="" class="img-fluid">
+
+                        <img src="./assets/img/newsroom/news7.jpg" alt="" class="img-fluid">
+
+                        <img src="./assets/img/newsroom/news8.jpg" alt="" class="img-fluid">
+
+                        <img src="./assets/img/newsroom/news9.jpg" alt="" class="img-fluid">
+
+                        <img src="./assets/img/newsroom/news10.jpg" alt="" class="img-fluid">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Newsroom Modal -->
+    
+    <!-- Safe House Modal -->
+    <div id="safehouse-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">The Mediterranean Sector</h4>
+                </div>
+                <div class="modal-body">
+                    <h5>Minimum: <span>25 Agents</span></h5>
+                    <h5>Maximum: <span>30 Agents</span></h5>
+                    <p>Where performing artists gather after the 
+  show. Home to the world's largest 
+  mechanical puzzle, good for hours of 
+  speculation.</p>
+            
+                    <button class="btn btn-primary btn-block m-b-2" data-toggle="collapse" data-target="#sh-modal-imgs">See Photos</button>
+                    
+                    <div id="sh-modal-imgs" class="collapse fade">
+                        <img src="./assets/img/safehouse/safe1.jpg" alt="" class="img-fluid">
+         
+                        <img src="./assets/img/safehouse/safe2.jpg" alt="" class="img-fluid">
+
+                        <img src="./assets/img/safehouse/safe3.jpg" alt="" class="img-fluid">
+
+                        <img src="./assets/img/safehouse/safe4.jpg" alt="" class="img-fluid">
+                        
+                        <img src="./assets/img/safehouse/safe5.jpg" alt="" class="img-fluid">
+                    </div>
+            
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Safe House Modal -->
+    <!-- End Modals -->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/main.js"></script>

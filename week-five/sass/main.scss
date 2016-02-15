@@ -4,17 +4,22 @@
 @import "partials/sidebar-nav";
 @import "partials/fonts";
 @import "partials/animations";
+@import "partials/modals";
 
 /*******************
 Universal Styles
 *******************/
 
-//.modal.and.carousel {
-//  position: absolute; // Needed because the carousel overrides the position property
-//}
+* {
+    text-rendering: optimizeLegibility;
+}
 
 html {
     background-color: $black;
+}
+
+.transition {
+    display: none;
 }
 
 h1, h2, h3 {
@@ -33,9 +38,9 @@ h1 {
 h2 {
     font-size: 3em;
     color: $light-black;
-        margin-left: -30px;
-        border-left: 10px solid $red;
-        padding-left: 20px;  
+    margin-left: -30px;
+    border-left: 10px solid $red;
+    padding-left: 20px;  
 }
 
 h4 {
@@ -52,6 +57,7 @@ h5 {
 
 p {
     font-family: 'American Typewriter';
+    font-size: 1.2em;
 }
 
 .content {
@@ -67,10 +73,14 @@ p {
     color: $black;
     border-radius: 0;
     transition: all 0.2s ease;
+    font-family: 'American Typewriter';
     
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
         background-color: $red;
         border-color: $white;
+        outline: none;
     }
 }
 
@@ -147,6 +157,10 @@ span {
     
     .row:nth-of-type(3) {
         border-top: 1px solid $black;
+        
+        p {
+            font-size: 0.8em;
+        }
     }
     
     div:nth-of-type(3) li {
@@ -162,9 +176,16 @@ span {
     }
 }
 
+.blockquote {
+    p {
+        font-size: 1em;
+    }
+}
+
 .row {
     width: 100%;
     margin: 0;
+    padding: 0 20px;
 }
 
 /*******************
@@ -190,8 +211,7 @@ Home Page
     }
 
     h1 {
-        font-size: 60px;
-        font-family: 'Liberator Heavy';
+        font-family: 'Liberator Medium';
 
         &::after {
             content: "";
@@ -206,7 +226,7 @@ Home Page
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 1.5em;
         font-family: 'Moms Typewriter';
         text-transform: uppercase;
         padding-top: 20px;
@@ -216,8 +236,7 @@ Home Page
     }
 
     p {
-        font-size: 14px;
-        font-family: 'American Typewriter';
+        font-size: 1em;
         padding: 10px 70px;
 
         @include bp-large {
@@ -239,18 +258,12 @@ Home Page
     }
 }
 
-.row {
-    padding: 0 20px;
-}
-
 /*******************
 About Us Page
 *******************/
 
 #about-us {
-    height: 100% !important;
-    background-color: $black;
-    color: $white;
+    @extend %page-content;
     
     .jumbotron {
         background: 
@@ -271,9 +284,7 @@ Reservations Page
 
 
 #reservations {
-    height: 100% !important;
-    background-color: $black;
-    color: $white;
+    @extend %page-content;
     
     .jumbotron {
         background: 
@@ -299,9 +310,7 @@ Secret Location Page
 *******************/
 
 #secret-location {
-    height: 100% !important;
-    background-color: $black;
-    color: $white;
+    @extend %page-content;
     
     .jumbotron {
         background: 
