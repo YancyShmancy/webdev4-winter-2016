@@ -4887,6 +4887,9 @@ a.bg-danger:focus, a.bg-danger:hover {
 /*******************
 Universal Styles
 *******************/
+html {
+  background-color: #000; }
+
 h1, h2, h3 {
   font-family: 'Liberator Light';
   letter-spacing: 2px; }
@@ -4905,14 +4908,14 @@ h2 {
   padding-left: 20px; }
 
 h4 {
-  font-family: 'Moms Typewriter';
+  font-family: 'Liberator Light';
   border-left: 5px solid #CE2927;
   padding-left: 10px;
   margin-left: -15px;
   color: #6C7A89; }
 
 h5 {
-  font-family: 'Liberator Light'; }
+  font-family: 'Moms Typewriter'; }
 
 p {
   font-family: 'American Typewriter'; }
@@ -4974,6 +4977,7 @@ span {
     border-left: 0px;
     color: #fff; }
   .page-content-wrapper > footer h4 {
+    font-size: 2em;
     margin-left: 0;
     padding-left: 0; }
   .page-content-wrapper > footer h5 {
@@ -4981,9 +4985,16 @@ span {
     padding-bottom: 5px; }
   .page-content-wrapper > footer a {
     color: #fff;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    font-family: 'American Typewriter'; }
   .page-content-wrapper > footer .row:nth-of-type(3) {
     border-top: 1px solid #000; }
+  .page-content-wrapper > footer div:nth-of-type(3) li {
+    padding: 5px 0; }
+    .page-content-wrapper > footer div:nth-of-type(3) li a {
+      color: #000; }
+      .page-content-wrapper > footer div:nth-of-type(3) li a i {
+        padding-right: 10px; }
 
 .row {
   width: 100%;
@@ -5075,3 +5086,19 @@ Reservations Page
   #reservations #date-input,
   #reservations #time-input {
     height: 40px; }
+
+/*******************
+Secret Location Page
+*******************/
+#secret-location {
+  height: 100% !important;
+  background-color: #000;
+  color: #fff; }
+  #secret-location .jumbotron {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/alley.png") no-repeat;
+    background-size: cover;
+    background-position: center; }
+    #secret-location .jumbotron h1 {
+      width: 80%; }
+  #secret-location #map-container {
+    height: 300px; }
