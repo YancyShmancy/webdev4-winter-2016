@@ -1,12 +1,16 @@
 @import "../../node_modules/material-design-lite/src/material-design-lite";
 @import "partials/colors";
 
+/************************
+Universal Styles
+************************/
+
 * {
     box-sizing: border-box;
 }
 
 .mdl-layout__header .mdl-layout__drawer-button {
-    color: black;
+    color: $color-black;
 }
 
 section {
@@ -19,11 +23,18 @@ section {
     height: 100%;
 }
 
+.section-hero {
+    height: 300px;
+    width: 100%;
+    padding: 100px 0;
+}
+
 section.secondary {
     background-color: $section-secondary-background;
 }
 
 .section-header {
+    color: $color-black;
     width: 100%;
     text-align: center;
     font-weight: 300;
@@ -35,6 +46,17 @@ section.secondary {
     bottom: -28.5px;
 }
 
+h1, h2 {
+    color: $color-white;
+    font-weight: 100;
+    letter-spacing: normal;
+}
+
+
+/************************
+Hero Section
+************************/
+
 .hero {
     position: relative;
     height: 550px;
@@ -45,12 +67,6 @@ section.secondary {
         url('../img/big-yosemite-3.jpeg') no-repeat;
     padding: 100px 0 0 0;
     
-    h1 {
-        color: white;
-        font-weight: 100;
-        letter-spacing: normal;
-    }
-    
     .hero__fab-container {
         position: absolute;
         bottom: -28.5px;
@@ -58,7 +74,12 @@ section.secondary {
     }
 }
 
+/************************
+Explore Section
+************************/
+
 #explore {
+    
     .mdl-card {
         width: 100%;
         
@@ -91,3 +112,39 @@ section.secondary {
         background-size: cover;
     }
 }
+
+
+/************************
+Reservations Section
+************************/
+
+#reservations {
+    
+    .section-hero {
+        background: 
+            -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+            url(../img/reservations-hero.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .mdl-card__title-text {
+        font-weight: 400;
+        margin-bottom: 24px;
+        color: $light-black-header;
+    }
+    
+    .mdl-card__supporting-text {
+        padding: 40px;
+        width: 100%;
+        
+        h3 {
+            color: $color-black;
+        }
+    }
+    
+    .mdl-card__supporting-text ~ .mdl-card__supporting-text {
+        border-top: 1px solid $light-border-color;
+    }
+}
+

@@ -10576,6 +10576,9 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-cell--11-offset-desktop.mdl-cell--11-offset-desktop {
       margin-left: 91.66667%; } }
 
+/************************
+Universal Styles
+************************/
 * {
   box-sizing: border-box; }
 
@@ -10590,10 +10593,16 @@ section {
   margin: 0 10%;
   height: 100%; }
 
+.section-hero {
+  height: 300px;
+  width: 100%;
+  padding: 100px 0; }
+
 section.secondary {
-  background-color: #646464; }
+  background-color: #EBEBEB; }
 
 .section-header {
+  color: black;
   width: 100%;
   text-align: center;
   font-weight: 300;
@@ -10603,6 +10612,14 @@ section.secondary {
   position: relative;
   bottom: -28.5px; }
 
+h1, h2 {
+  color: white;
+  font-weight: 100;
+  letter-spacing: normal; }
+
+/************************
+Hero Section
+************************/
 .hero {
   position: relative;
   height: 550px;
@@ -10610,15 +10627,14 @@ section.secondary {
   background-position: center;
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/big-yosemite-3.jpeg") no-repeat;
   padding: 100px 0 0 0; }
-  .hero h1 {
-    color: white;
-    font-weight: 100;
-    letter-spacing: normal; }
   .hero .hero__fab-container {
     position: absolute;
     bottom: -28.5px;
     left: 0; }
 
+/************************
+Explore Section
+************************/
 #explore .mdl-card {
   width: 100%; }
   #explore .mdl-card .mdl-card__title {
@@ -10638,3 +10654,25 @@ section.secondary {
   background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../img/camping.jpg") no-repeat;
   background-position: center;
   background-size: cover; }
+
+/************************
+Reservations Section
+************************/
+#reservations .section-hero {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/reservations-hero.jpg) no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+#reservations .mdl-card__title-text {
+  font-weight: 400;
+  margin-bottom: 24px;
+  color: #757575; }
+
+#reservations .mdl-card__supporting-text {
+  padding: 40px;
+  width: 100%; }
+  #reservations .mdl-card__supporting-text h3 {
+    color: black; }
+
+#reservations .mdl-card__supporting-text ~ .mdl-card__supporting-text {
+  border-top: 1px solid #F0F0F0; }
