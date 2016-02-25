@@ -24,12 +24,16 @@ section {
 }
 
 .section-container {
-    margin: 0 10%; 
+    margin: 0 10%;
+    
+    @media (max-width:768px) {
+        margin: 0 0;
+    }
 }
 
 .section-container-full,
 .section-container {
-    padding: 60px 0 30px 0;
+    padding: 60px 0 60px 0;
     height: 100%;
 }
 
@@ -62,7 +66,12 @@ h1, h2 {
     letter-spacing: normal;
 }
 
-.mdl-layout-title {
+.mdl-card__supporting-text ~ .mdl-card__supporting-text {
+    border-top: 1px solid $light-border-color;
+}
+
+
+.mdl-layout__drawer>.mdl-layout-title {
     height: 150px;
     background-color: $section-secondary-background;
     
@@ -78,3 +87,4 @@ h1, h2 {
         line-height: 1.5em;
     }
 }
+

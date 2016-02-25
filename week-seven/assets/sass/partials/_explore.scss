@@ -5,7 +5,26 @@ Explore Section
 #explore {
     
     .mdl-card {
-        width: 100%;
+        transition: all 0.25s ease;
+        
+        .mdl-list {
+            padding-left: 20px;
+            li {
+                list-style-type: circle;
+            }
+        }
+        
+        .explore-hidden {
+            display: none;
+        }
+        
+        &.expanded {
+            width: 100%;
+            
+            .explore-hidden {
+                display: inline-block;
+            }
+        }
         
         .mdl-card__title {
             height: 180px;

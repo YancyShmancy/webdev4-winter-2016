@@ -2,26 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Week-Seven</title>
+    <title>Yosemite National Park</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" type="text/css">
-       
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
     <link rel="stylesheet" href="./assets/css/main.css">
-<!--    <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.blue_grey-pink.min.css" />-->
-<!--    <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.green-deep_orange.min.css" />-->
 </head>
 <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header mdl-color--white">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title"></span>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
@@ -33,6 +27,15 @@
                 </nav>
                 
                 <div class="mdl-layout-spacer"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-color-text--black">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="search-expandable">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="search-expandable" />
+                        <label class="mdl-textfield__label" for="search-expandable">Search text</label>
+                    </div>
+                </div>
             </div>
         </header>
         <div class="mdl-layout__drawer">
@@ -54,7 +57,7 @@
                         <h1 class="mdl-typography--text-center">Yosemite National Park</h1>
                         <div class="hero__button-container mdl-typography--text-center">
                             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored mdl-button--raised mdl-button--accent mdl-shadow--4dp" id="hero-menu-upper-left">
-                                  See More
+                                  Share
                             </button>
                             <ul class="mdl-menu mdl-menu--upper-left mdl-js-menu mdl-js-ripple-effect" for="hero-menu-upper-left">
                                 <li class="mdl-menu__item"><a href="http://twitter.com/home?status=" title="Share on Twitter" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
@@ -82,155 +85,264 @@
                     <div class="section-container">
                         <div class="mdl-grid">
                             <h2 class="section-header">Explore Yosemite</h2>
-                            <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
-                                <div class="mdl-card-wide mdl-card mdl-shadow--2dp" id="hiking">
-                                    <div class="mdl-card__title mdl-color-text--white">
-                                        <h2 class="mdl-card__title-text">Hiking</h2>
-                                    </div>
-                                    <div class="mdl-card__supporting-text">
-                                        Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.
-                                    </div>
-                                    <div class="mdl-card__actions mdl-card--border">
-                                        <a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> See More</a>
-                                    </div>
-                                    <div class="mdl-card__menu mdl-color-text--white">
-                                        <button id="hiking-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
-                                            <i class="material-icons">more_vert</i>
-                                        </button>
-                                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="hiking-menu-lower-right">
-                                            <li class="mdl-menu__item">More Info</li>
-                                            <li class="mdl-menu__item"><i class="material-icons  mdl-list__item-icon">share</i> Share</li>
-                                            <li disabled class="mdl-menu__item">Disabled Action</li>
-                                            <li class="mdl-menu__item">See All</li>
-                                        </ul>
-                                    </div>
+                            
+                            <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col mdl-card-wide mdl-card mdl-shadow--2dp" id="hiking">
+                                <div class="mdl-card__title mdl-color-text--white">
+                                    <h2 class="mdl-card__title-text">Hiking</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    Group hikes let you experience Yosemite with like-minded individuals. From a biking &amp; hiking combo to an all-day adventure, you'll find plenty of ways to experience Yosemite with new friends!
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Bike to Hike Tour</h4>
+                                    <p>
+                                       Rent a bike or bring your own and join us for the perfect way to explore the valley floor. We’ll ride our bikes to scenic locations or trailheads and then take short hikes from there. Along the way you’ll learn about Yosemite history, geology, ecology and see some of our favorite spots. Our group sizes are small so we go at your pace, and can customize the tour based on your interests. Bike rentals are available at Curry Village and Yosemite Lodge Bike Stands. The cost of bike rental is not included in the cost of the Bike to Hike Tour.
+                                        <br>
+                                        <br> 
+                                        Duration: 2.5 hours
+                                        <br>
+                                        Cost: $20 per person; 10 and under $5 with paying adult. Participants need to know how to ride a bicycle.
+                                    </p>
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Discovery Hikes</h4>
+                                    <p>
+                                       For people who agree that it's about the journey rather than the destination, the relaxed-paced Discover Yosemite Hikes are perfect, with stops along the way to smell the flowers, watch rock climbers, take pictures and just have fun. With our small group sizes, there is plenty of flexibility to make this Yosemite group hiking experience fit your interests. Must be a minimum age of 12.
+                                        <br>
+                                        <br> 
+                                        Duration: 3.5 hours, covering roughly 3-4 miles.
+                                        <br>
+                                        Cost: $30 per person
+                                    </p>
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Adventure Hike: Glacier Point to Yosemite Valley via Panorama Trail</h4>
+                                    <p>
+                                       Join the Glacier Point Tour for a one-way bus ride up to Glacier Point.  Then, hike down to the Valley with one of our fun and friendly guides via the Panorama Trail.  Our guides are experienced locals who are excited to share their knowldge and love of the trail with you. Small group sizes allow a personalized touch and flexible itinerary.  Plan to walk roughly 8 miles during this 8 hour trip.
+                                        <br>
+                                        <br> 
+                                        Duration: 8 hours , covering 6-8 miles
+                                        <br>
+                                        $75.00 per person, price includes bus ticket.
+                                    </p>
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Adventure Hike</h4>
+                                    <p>
+                                       Spend a day enjoying Yosemite with one of our fun and friendly guides.  Even the most popular trails are more enjoyable when you have someone who can tell you about the places that you are hiking through, (and possibly help carry some of the extra water).  Our guides are experienced locals who are excited to share their knowledge and love of the park with you.  Our small group sizes allow them to lead personalized, flexible group hiking excursions in Yosemite.  Must be a minimum age of 12.
+                                        <br>
+                                        <br> 
+                                        Durations: 6 hours, covering 6+ miles
+                                        <br>
+                                        Cost: $50 per person
+                                    </p>
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Reservations</h4>
+                                    <p>
+                                       Reservations for Yosemite group hiking  and custom hikes are available by calling (209) 372-4FUN (4386) or by asking at any of the Tour &amp; Activity Desks in Yosemite Valley. Additional information is available in the Yosemite Guide available at all Park entrance gates and the National Park Service Visitor Center.
+                                    </p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a role="button" class="card-extend mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> See More</a>
+                                </div>
+                                <div class="mdl-card__menu mdl-color-text--white">
+                                    <button class="mdl-button mdl-js-button mdl-button--icon card-contract">
+                                        <i class="material-icons">clear</i>
+                                    </button>
                                 </div>
                             </div>
-
-                            <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
-                                <div class="mdl-card-wide mdl-card mdl-shadow--2dp" id="skiing">
-                                    <div class="mdl-card__title mdl-color-text--white">
-                                        <h2 class="mdl-card__title-text">Skiing</h2>
-                                    </div>
-                                    <div class="mdl-card__supporting-text">
-                                        Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.
-                                    </div>
-                                    <div class="mdl-card__actions mdl-card--border">
-                                        <a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">See More</a>
-                                    </div>
-                                    <div class="mdl-card__menu mdl-color-text--white">
-                                        <button id="skiing-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
-                                            <i class="material-icons">more_vert</i>
-                                        </button>
-                                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="skiing-menu-lower-right">
-                                            <li class="mdl-menu__item">More Info</li>
-                                            <li class="mdl-menu__item"><i class="material-icons  mdl-list__item-icon">share</i> Share</li>
-                                            <li disabled class="mdl-menu__item">Disabled Action</li>
-                                            <li class="mdl-menu__item">See All</li>
-                                        </ul>
-                                    </div>
+                            
+                            <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col mdl-card-wide mdl-card mdl-shadow--2dp" id="skiing">
+                                <div class="mdl-card__title mdl-color-text--white">
+                                    <h2 class="mdl-card__title-text">Skiing</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    The first in the West, the Yosemite Ski and Snowboard School was established in 1928 and today employs a staff of 25 instructors, many of whom are members of the Professional Ski Instructors of America®.
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Guaranteed Learn-to-Ski/Snowboard Packages</h4>
+                                    <p>
+                                       These are the perfect courses for beginner skiers and snowboarders. Learn to ride the Bruin chairlift and ski or board down on your first day, or you can keep coming back (on us) until you do. Equipment rental, beginner lift ticket, and ski lessons included. 
+                                    </p>
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Ski Lessons for Children</h4>
+                                    <p>
+                                       Little ones love to slide on the snow. Start your kids skiing early in the Badger Pups children's ski/snowboard lessons program, perfect for children ages 4 to 6. On weekends and holidays during the ski season, the All Day Kids Camp is available from 9:30 a.m. to 4:15 p.m. This program includes instruction for first time skiers ages 4 to 12 and first time snowboarders ages 7 to 12, lunch, snacks, ski or snowboard equipment rental, and helmet rental.
+                                    </p>
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Introduction to Skiing/Snowboarding Lesson Package</h4>
+                                    <p>
+                                       Sample the fun at Badger Pass with our Introductory Ski or Snowboard lesson package. These one- to two-hour first-time beginner ski lessons are offered at 10 a.m. and 2 p.m. daily.
+                                    </p>
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>The Next Step Lesson Package</h4>
+                                    <p>
+                                       Improve your new skills! Offered at 10 a.m. and 2 p.m., this one- to two-hour program is a perfect refresher course for the novice or intermediate skier. Take the morning course, practice what you learned, and come back for the afternoon course to fine tune your new skills. This package is for skiers ages 7 and up.
+                                    </p>
+                                    For those seeking individual attention or who want to hone a specific skill, private ski lessons offer one-on-one instruction. Private lesson times are at 9 a.m. and 1 p.m. Reservations are recommended.
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Private Ski Lessons</h4>
+                                    <p>
+                                       For those seeking individual attention or who want to hone a specific skill, private ski lessons offer one-on-one instruction. Private lesson times are at 9 a.m. and 1 p.m. Reservations are recommended.
+                                    </p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a role="button" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect card-extend">See More</a>
+                                </div>
+                                <div class="mdl-card__menu mdl-color-text--white">
+                                    <button class="mdl-button mdl-js-button mdl-button--icon card-contract">
+                                        <i class="material-icons">clear</i>
+                                    </button>
                                 </div>
                             </div>
-
-                            <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
-                                <div class="mdl-card-wide mdl-card mdl-shadow--2dp" id="camping">
-                                    <div class="mdl-card__title mdl-color-text--white">
-                                        <h2 class="mdl-card__title-text">Camping</h2>
-                                    </div>
-                                    <div class="mdl-card__supporting-text">
-                                        Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.
-                                    </div>
-                                    <div class="mdl-card__actions mdl-card--border">
-                                        <a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> See More</a>
-                                    </div>
-                                    <div class="mdl-card__menu mdl-color-text--white">
-                                        <button id="camping-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
-                                            <i class="material-icons">more_vert</i>
-                                        </button>
-                                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="camping-menu-lower-right">
-                                            <li class="mdl-menu__item">More Info</li>
-                                            <li class="mdl-menu__item"><i class="material-icons  mdl-list__item-icon">share</i> Share</li>
-                                            <li disabled class="mdl-menu__item">Disabled Action</li>
-                                            <li class="mdl-menu__item">See All</li>
+                               
+                            <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col mdl-card-wide mdl-card mdl-shadow--2dp" id="camping">
+                                <div class="mdl-card__title mdl-color-text--white">
+                                    <h2 class="mdl-card__title-text">Camping</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    Yosemite has 13 campgrounds within the park, each in a wonderful setting with sweeping views or forest canopies - and plenty of room to relax. Yosemite National Park camping offers a wide variety of options. 
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Yosemite Mountaineering School</h4>
+                                    <p>
+                                        The Yosemite Mountaineering School offers guided over-night back-country trips. With many pre-planned trips anyone can join, plus the option to plan a custom trip just for you and your group, we make it easy to experience the Park. 
+                                    </p>
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Canvas Tent Cabins</h4>
+                                    <p>
+                                        If you have camping sensibility but would look forward to something roomier and more comfortable, you'll enjoy tent cabins in Curry Village, Housekeeping Camp, Tuolumne Meadows, White Wolf and all the Yosemite High Camps. Visit our Lodging section for more information.
+                                    </p>
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Traditional Tent Camping</h4>
+                                    <p>
+                                        Setting up your own tent, cooking over a fire ring or camp stove, sleeping under the stars. This type of camping is the ultimate National Park experience!
+                                        <br>
+                                        <br>
+                                        For more information on Campgrounds in Yosemite, visit the National Park Service site, or call (877) 444-6777.
+                                        <br>
+                                        <br>
+                                        Are you looking for some camping supplies? Stores in Yosemite Park carry camping essentials, including fuel for your cooking stoves. We usually stock the following fuel types here in the park:
+                                        <br>
+                                        <ul class="mdl-list list">
+                                            <li class="list-item">Denatured alcohol</li>
+                                            <li class="list-item">White gas</li>
+                                            <li class="list-item">Coleman Propane canisters</li>
+                                            <li class="list-item">Coleman PowerMax canisters</li>
+                                            <li class="list-item">Isobutane canisters - both the threaded and puncture style.</li>
                                         </ul>
-                                    </div>
+                                    </p>
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>RV Camping</h4>
+                                    <p>
+                                        No tents, no unpacking, just park, put up the canopy and start relaxing. Yosemite has 10 campgrounds that accommodate RVs and trailers. There are no RV hookups within the park, but there are dump stations in various locations.  Visit the NPS site for more information on RV Camping.
+                                    </p>
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Wilderness Camping</h4>
+                                    <p>
+                                        94% (1,101 square miles) of Yosemite is wilderness. See it by packing your backpack and finding a nice remote spot to sleep under the stars. You'll need a wilderness permit, information on being Bear Aware and a bear canister. For a wealth of information on Yosemite camping sites in the backcountry, see the NPS backpacking page.
+                                    </p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a role="button" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect card-extend"> See More</a>
+                                </div>
+                                <div class="mdl-card__menu mdl-color-text--white">
+                                    <button class="mdl-button mdl-js-button mdl-button--icon card-contract">
+                                        <i class="material-icons">clear</i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
 
                         <div class="mdl-grid hidden mdl-animation--default" id="explore-extra">
-                            <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
-                                <div class="mdl-card-wide mdl-card mdl-shadow--2dp" id="events">
-                                    <div class="mdl-card__title mdl-color-text--white">
-                                        <h2 class="mdl-card__title-text">Events</h2>
-                                    </div>
-                                    <div class="mdl-card__supporting-text">
-                                        Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.
-                                    </div>
-                                    <div class="mdl-card__actions mdl-card--border">
-                                        <a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> See More</a>
-                                    </div>
-                                    <div class="mdl-card__menu mdl-color-text--white">
-                                        <button id="events-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
-                                            <i class="material-icons">more_vert</i>
-                                        </button>
-                                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="events-menu-lower-right">
-                                            <li class="mdl-menu__item">More Info</li>
-                                            <li class="mdl-menu__item"><i class="material-icons  mdl-list__item-icon">share</i> Share</li>
-                                            <li disabled class="mdl-menu__item">Disabled Action</li>
-                                            <li class="mdl-menu__item">See All</li>
-                                        </ul>
-                                    </div>
+                            <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col mdl-card-wide mdl-card mdl-shadow--2dp" id="events">
+                                <div class="mdl-card__title mdl-color-text--white">
+                                    <h2 class="mdl-card__title-text">Events</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    Whether you want to celebrate protecting the environment with us on Earth Day or relax with reknowned vintners and sample fine wine during Vintners’ Holidays, there’s a Yosemite Event for you.
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Culinary Events</h4>
+                                    <p>Join us in Yosemite for extraordinary culinary vacations and special events like no other. Combine culture and fine dining with the natural beauty of the park's sweeping granite walls and stunning waterfalls. With a stellar line-up of events each year, a signature Food and Wine Event will make your Yosemite vacation even more memorable.</p>
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Park Events</h4>
+                                    <p>There is an endless array of Yosemite events and adventures throughout the year. See the latest set of offerings in the Yosemite Guide, the park's newsletter.</p>
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Plan Your Own Event</h4>
+                                    <p>Whether you’re looking to plan the perfect wedding, business meeting, or reunion, Yosemite offers not only inspirational scenery and easy access to waterfalls, granite walls and wildflowers, but also a wide variety of event venues, accommodations for all budgets, and a rich array of activities for all energy levels.</p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a role="button" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect card-extend"> See More</a>
+                                </div>
+                                <div class="mdl-card__menu mdl-color-text--white">
+                                    <button class="mdl-button mdl-js-button mdl-button--icon card-contract">
+                                        <i class="material-icons">clear</i>
+                                    </button>
                                 </div>
                             </div>
 
-                            <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
-                                <div class="mdl-card-wide mdl-card mdl-shadow--2dp" id="rock-climbing">
-                                    <div class="mdl-card__title mdl-color-text--white">
-                                        <h2 class="mdl-card__title-text">Rock Climbing</h2>
-                                    </div>
-                                    <div class="mdl-card__supporting-text">
-                                        Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.
-                                    </div>
-                                    <div class="mdl-card__actions mdl-card--border">
-                                        <a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">See More</a>
-                                    </div>
-                                    <div class="mdl-card__menu mdl-color-text--white">
-                                        <button id="climbing-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
-                                            <i class="material-icons">more_vert</i>
-                                        </button>
-                                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="climbing-menu-lower-right">
-                                            <li class="mdl-menu__item">More Info</li>
-                                            <li class="mdl-menu__item"><i class="material-icons  mdl-list__item-icon">share</i> Share</li>
-                                            <li disabled class="mdl-menu__item">Disabled Action</li>
-                                            <li class="mdl-menu__item">See All</li>
-                                        </ul>
-                                    </div>
+                            
+                            <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col mdl-card-wide mdl-card mdl-shadow--2dp" id="rock-climbing">
+                                <div class="mdl-card__title mdl-color-text--white">
+                                    <h2 class="mdl-card__title-text">Rock Climbing</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    The Yosemite Mountaineering School and Guide Service has been rock climbing in Yosemite since 1969. We know Yosemite better than anyone and love sharing our knowledge and skills with you.
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Climbing Lessons at Yosemite</h4>
+                                    <p>Offered daily April thru October, our Yosemite rock climbing classes are designed to give climbers of all levels new and extended skill sets. Reservations are strongly recommended, and customized classes are also available. Call (209) 372-8344 for more information about any of our Yosemite rock climbing lessons.
+                                    <br>
+                                    <br>
+                                    All of our climbing classes average seven hours in length, unless otherwise noted, so prepare for a full day of fun. Classes meet daily at 8:30 am at either the Mountaineering School in Curry Village or in Tuolumne Meadows. Each class builds upon the other - and they are designed to be taken sequentially, so that you can pick the single class you need, design the perfect multi-day seminar or come up every couple of weeks and complete our entire Yosemite climbing training program. Maximum size for private and group classes are 6 students per instructor.
+                                    <br>
+                                    <br>
+                                    Minimum age for climbing lessons is 12.  Children that are 10 and 11 years old can join the regular classes with a supervising adult present.  Children under 10 can participate in a private lesson with an accompanying adult.</p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a role="button" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect card-extend">See More</a>
+                                </div>
+                                <div class="mdl-card__menu mdl-color-text--white">
+                                    <button class="mdl-button mdl-js-button mdl-button--icon card-contract">
+                                        <i class="material-icons">clear</i>
+                                    </button>
                                 </div>
                             </div>
-
-                            <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
-                                <div class="mdl-card-wide mdl-card mdl-shadow--2dp" id="biking">
-                                    <div class="mdl-card__title mdl-color-text--white">
-                                        <h2 class="mdl-card__title-text">Biking</h2>
-                                    </div>
-                                    <div class="mdl-card__supporting-text">
-                                        Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.
-                                    </div>
-                                    <div class="mdl-card__actions mdl-card--border">
-                                        <a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> See More</a>
-                                    </div>
-                                    <div class="mdl-card__menu mdl-color-text--white">
-                                        <button id="biking-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
-                                            <i class="material-icons">more_vert</i>
-                                        </button>
-                                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="biking-menu-lower-right">
-                                            <li class="mdl-menu__item">More Info</li>
-                                            <li class="mdl-menu__item"><i class="material-icons  mdl-list__item-icon">share</i> Share</li>
-                                            <li disabled class="mdl-menu__item">Disabled Action</li>
-                                            <li class="mdl-menu__item">See All</li>
-                                        </ul>
-                                    </div>
+   
+                            <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col mdl-card-wide mdl-card mdl-shadow--2dp" id="biking">
+                                <div class="mdl-card__title mdl-color-text--white">
+                                    <h2 class="mdl-card__title-text">Biking</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    With over 12 miles of paved bike trails in Yosemite National Park, you can explore Yosemite at your own pace, stopping to take photos and soak in the magnificent views at your leisure.
+                                </div>
+                                <div class="mdl-card__supporting-text explore-hidden">
+                                    <h4>Bike Rentals</h4>
+                                    <p>
+                                        Rental bikes, trailers and helmets are available for all ages of riders. For the visually or physically impaired, we have a tandem bike and a hand crank bike.
+                                        <br>
+                                        <br> 
+                                        DNC provides each rider an orientation regarding bike trails and use of a hand crank bike that will accommodate anyone with use of their upper body. All two seated bikes are reserved for visually impaired riders. Advanced reservations required for rental.</p>
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a role="button" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect card-extend"> See More</a>
+                                </div>
+                                <div class="mdl-card__menu mdl-color-text--white">
+                                    <button class="mdl-button mdl-js-button mdl-button--icon card-contract">
+                                        <i class="material-icons">clear</i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -525,7 +637,7 @@
                     </div>
 
                     <div class="mdl-mega-footer__bottom-section mdl-cell mdl-cell--12-col mdl-cell--8-col-desktop mdl-cell--2-offset-desktop">
-                        <div class="mdl-logo">Yosemite National Park</div>
+                        <div class="mdl-logo"><img src="./assets/img/logo.png" alt=""></div>
                         <ul class="mdl-mega-footer__link-list">
                             <li><a href="#">Help</a></li>
                             <li><a href="#">Privacy &amp; Terms</a></li>
@@ -540,7 +652,6 @@
             </div>
         </main>
     </div>
-    
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="./assets/js/freewall.js"></script>

@@ -4,6 +4,14 @@ $(document).ready(function() {
         $('#explore-extra').toggleClass("hidden");
     });
     
+    $('.card-extend').on('click', function() {
+        $(this).parent().parent().addClass('expanded');
+    });
+    
+    $('.card-contract').on('click', function() {
+        $(this).parent().parent().removeClass('expanded');
+    });
+    
     $('a[href*=#]').click(function(e){
         e.preventDefault();
     });

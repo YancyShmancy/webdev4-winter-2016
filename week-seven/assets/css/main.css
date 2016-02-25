@@ -10820,7 +10820,7 @@ Hero Section
     left: 0; }
   .hero .hero__button-container {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 0;
     width: 100%; }
   .hero #flat-hero-button {
@@ -10837,7 +10837,17 @@ Hero Section
 Explore Section
 ************************/
 #explore .mdl-card {
-  width: 100%; }
+  transition: all 0.25s ease; }
+  #explore .mdl-card .mdl-list {
+    padding-left: 20px; }
+    #explore .mdl-card .mdl-list li {
+      list-style-type: circle; }
+  #explore .mdl-card .explore-hidden {
+    display: none; }
+  #explore .mdl-card.expanded {
+    width: 100%; }
+    #explore .mdl-card.expanded .explore-hidden {
+      display: inline-block; }
   #explore .mdl-card .mdl-card__title {
     height: 180px; }
 
@@ -10897,8 +10907,6 @@ Reservations Section
     #reservations .mdl-card__supporting-text .mdl-radio {
       width: 100%;
       margin-bottom: 10px; }
-  #reservations .mdl-card__supporting-text ~ .mdl-card__supporting-text {
-    border-top: 1px solid #F0F0F0; }
 
 /************************
 Images Section
@@ -10943,6 +10951,9 @@ Footer Section
 footer h1.mdl-mega-footer__heading {
   font-weight: 300 !important; }
 
+footer .mdl-logo img {
+  height: 30px; }
+
 /************************
 Universal Styles
 ************************/
@@ -10957,10 +10968,13 @@ section {
 
 .section-container {
   margin: 0 10%; }
+  @media (max-width: 768px) {
+    .section-container {
+      margin: 0 0; } }
 
 .section-container-full,
 .section-container {
-  padding: 60px 0 30px 0;
+  padding: 60px 0 60px 0;
   height: 100%; }
 
 .section-hero {
@@ -10987,10 +11001,13 @@ h1, h2 {
   font-weight: 100;
   letter-spacing: normal; }
 
-.mdl-layout-title {
+.mdl-card__supporting-text ~ .mdl-card__supporting-text {
+  border-top: 1px solid #F0F0F0; }
+
+.mdl-layout__drawer > .mdl-layout-title {
   height: 150px;
   background-color: #EBEBEB; }
-  .mdl-layout-title span {
+  .mdl-layout__drawer > .mdl-layout-title span {
     position: absolute;
     font-weight: 300;
     font-size: 1em;
