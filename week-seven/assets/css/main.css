@@ -10576,6 +10576,373 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-cell--11-offset-desktop.mdl-cell--11-offset-desktop {
       margin-left: 91.66667%; } }
 
+.mdl-button.mdl-button--twitter {
+  color: #3f51b5; }
+
+.mdl-button.mdl-button--twitter:focus:not(:active) {
+  background-color: #00acee; }
+
+.mdl-button--raised.mdl-button--twitter {
+  background: #00acee;
+  color: white; }
+
+.mdl-button--raised.mdl-button--twitter:hover {
+  background-color: #00acee; }
+
+.mdl-button--raised.mdl-button--twitter:active {
+  background-color: #00acee; }
+
+.mdl-button--raised.mdl-button--twitter:focus:not(:active) {
+  background-color: #00acee; }
+
+.mdl-button--raised.mdl-button--twitter .mdl-ripple {
+  background: white; }
+
+.mdl-button--fab.mdl-button--twitter {
+  background: #00acee;
+  color: white; }
+
+.mdl-button--fab.mdl-button--twitter:hover {
+  background-color: #00acee; }
+
+.mdl-button--fab.mdl-button--twitter:focus:not(:active) {
+  background-color: #00acee; }
+
+.mdl-button--fab.mdl-button--twitter:active {
+  background-color: #00acee; }
+
+.mdl-button--fab.mdl-button--twitter .mdl-ripple {
+  background: white; }
+
+.mdl-button.mdl-button--facebook {
+  color: #3f51b5; }
+
+.mdl-button.mdl-button--facebook:focus:not(:active) {
+  background-color: #3b5998; }
+
+.mdl-button--raised.mdl-button--facebook {
+  background: #3b5998;
+  color: white; }
+
+.mdl-button--raised.mdl-button--facebook:hover {
+  background-color: #3b5998; }
+
+.mdl-button--raised.mdl-button--facebook:active {
+  background-color: #3b5998; }
+
+.mdl-button--raised.mdl-button--facebook:focus:not(:active) {
+  background-color: #3b5998; }
+
+.mdl-button--raised.mdl-button--facebook .mdl-ripple {
+  background: white; }
+
+.mdl-button--fab.mdl-button--facebook {
+  background: #3b5998;
+  color: white; }
+
+.mdl-button--fab.mdl-button--facebook:hover {
+  background-color: #3b5998; }
+
+.mdl-button--fab.mdl-button--facebook:focus:not(:active) {
+  background-color: #3b5998; }
+
+.mdl-button--fab.mdl-button--facebook:active {
+  background-color: #3b5998; }
+
+.mdl-button--fab.mdl-button--facebook .mdl-ripple {
+  background: white; }
+
+.mdl-button.mdl-button--googleplus {
+  color: #3f51b5; }
+
+.mdl-button.mdl-button--googleplus:focus:not(:active) {
+  background-color: #e93f2e; }
+
+.mdl-button--raised.mdl-button--googleplus {
+  background: #e93f2e;
+  color: white; }
+
+.mdl-button--raised.mdl-button--googleplus:hover {
+  background-color: #e93f2e; }
+
+.mdl-button--raised.mdl-button--googleplus:active {
+  background-color: #e93f2e; }
+
+.mdl-button--raised.mdl-button--googleplus:focus:not(:active) {
+  background-color: #e93f2e; }
+
+.mdl-button--raised.mdl-button--googleplus .mdl-ripple {
+  background: white; }
+
+.mdl-button--fab.mdl-button--googleplus {
+  background: #e93f2e;
+  color: white; }
+
+.mdl-button--fab.mdl-button--googleplus:hover {
+  background-color: #e93f2e; }
+
+.mdl-button--fab.mdl-button--googleplus:focus:not(:active) {
+  background-color: #e93f2e; }
+
+.mdl-button--fab.mdl-button--googleplus:active {
+  background-color: #e93f2e; }
+
+.mdl-button--fab.mdl-button--googleplus .mdl-ripple {
+  background: white; }
+
+.mdl-button.mdl-button--stumbleupon {
+  color: #3f51b5; }
+
+.mdl-button.mdl-button--stumbleupon:focus:not(:active) {
+  background-color: #f74425; }
+
+.mdl-button--raised.mdl-button--stumbleupon {
+  background: #f74425;
+  color: white; }
+
+.mdl-button--raised.mdl-button--stumbleupon:hover {
+  background-color: #f74425; }
+
+.mdl-button--raised.mdl-button--stumbleupon:active {
+  background-color: #f74425; }
+
+.mdl-button--raised.mdl-button--stumbleupon:focus:not(:active) {
+  background-color: #f74425; }
+
+.mdl-button--raised.mdl-button--stumbleupon .mdl-ripple {
+  background: white; }
+
+.mdl-button--fab.mdl-button--stumbleupon {
+  background: #f74425;
+  color: white; }
+
+.mdl-button--fab.mdl-button--stumbleupon:hover {
+  background-color: #f74425; }
+
+.mdl-button--fab.mdl-button--stumbleupon:focus:not(:active) {
+  background-color: #f74425; }
+
+.mdl-button--fab.mdl-button--stumbleupon:active {
+  background-color: #f74425; }
+
+.mdl-button--fab.mdl-button--stumbleupon .mdl-ripple {
+  background: white; }
+
+.mdl-button.mdl-button--linkedin {
+  color: #3f51b5; }
+
+.mdl-button.mdl-button--linkedin:focus:not(:active) {
+  background-color: #0e76a8; }
+
+.mdl-button--raised.mdl-button--linkedin {
+  background: #0e76a8;
+  color: white; }
+
+.mdl-button--raised.mdl-button--linkedin:hover {
+  background-color: #0e76a8; }
+
+.mdl-button--raised.mdl-button--linkedin:active {
+  background-color: #0e76a8; }
+
+.mdl-button--raised.mdl-button--linkedin:focus:not(:active) {
+  background-color: #0e76a8; }
+
+.mdl-button--raised.mdl-button--linkedin .mdl-ripple {
+  background: white; }
+
+.mdl-button--fab.mdl-button--linkedin {
+  background: #0e76a8;
+  color: white; }
+
+.mdl-button--fab.mdl-button--linkedin:hover {
+  background-color: #0e76a8; }
+
+.mdl-button--fab.mdl-button--linkedin:focus:not(:active) {
+  background-color: #0e76a8; }
+
+.mdl-button--fab.mdl-button--linkedin:active {
+  background-color: #0e76a8; }
+
+.mdl-button--fab.mdl-button--linkedin .mdl-ripple {
+  background: white; }
+
+.mdl-button.mdl-button--instagram {
+  color: #3f51b5; }
+
+.mdl-button.mdl-button--instagram:focus:not(:active) {
+  background-color: #325C86; }
+
+.mdl-button--raised.mdl-button--instagram {
+  background: #325C86;
+  color: white; }
+
+.mdl-button--raised.mdl-button--instagram:hover {
+  background-color: #325C86; }
+
+.mdl-button--raised.mdl-button--instagram:active {
+  background-color: #325C86; }
+
+.mdl-button--raised.mdl-button--instagram:focus:not(:active) {
+  background-color: #325C86; }
+
+.mdl-button--raised.mdl-button--instagram .mdl-ripple {
+  background: white; }
+
+.mdl-button--fab.mdl-button--instagram {
+  background: #325C86;
+  color: white; }
+
+.mdl-button--fab.mdl-button--instagram:hover {
+  background-color: #325C86; }
+
+.mdl-button--fab.mdl-button--instagram:focus:not(:active) {
+  background-color: #325C86; }
+
+.mdl-button--fab.mdl-button--instagram:active {
+  background-color: #325C86; }
+
+.mdl-button--fab.mdl-button--instagram .mdl-ripple {
+  background: white; }
+
+/************************
+Hero Section
+************************/
+.hero {
+  position: relative;
+  height: 550px;
+  background-size: cover;
+  background-position: center;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/big-yosemite-3.jpeg") no-repeat;
+  padding: 100px 0 0 0; }
+  .hero .hero__fab-container {
+    position: absolute;
+    bottom: -28.5px;
+    left: 0; }
+  .hero .hero__button-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%; }
+  .hero #flat-hero-button {
+    color: white;
+    font-weight: 300;
+    text-transform: capitalize; }
+  .hero .mdl-menu a {
+    text-decoration: none;
+    color: black; }
+    .hero .mdl-menu a i {
+      padding: 0 10px 0 0; }
+
+/************************
+Explore Section
+************************/
+#explore .mdl-card {
+  width: 100%; }
+  #explore .mdl-card .mdl-card__title {
+    height: 180px; }
+
+#explore #hiking > .mdl-card__title {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/hiking.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+#explore #skiing > .mdl-card__title {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../img/skiing.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+#explore #camping > .mdl-card__title {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../img/camping.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+#explore #events > .mdl-card__title {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/events.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+#explore #biking > .mdl-card__title {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/biking.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+#explore #rock-climbing > .mdl-card__title {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/rock-climbing.jpg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+/************************
+Reservations Section
+************************/
+#reservations {
+  padding-bottom: 30px; }
+  #reservations .section-hero {
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/reservations-hero.jpg) no-repeat;
+    background-position: center;
+    background-size: cover; }
+  #reservations .mdl-card__title-text {
+    font-weight: 400;
+    margin-bottom: 24px;
+    color: #757575; }
+  #reservations .mdl-card__supporting-text {
+    padding: 40px;
+    width: 100%; }
+    #reservations .mdl-card__supporting-text h3 {
+      color: black;
+      margin-top: 0; }
+    #reservations .mdl-card__supporting-text .mdl-textfield {
+      margin: 10px 10px 10px 0; }
+      #reservations .mdl-card__supporting-text .mdl-textfield#nameInput {
+        display: block; }
+    #reservations .mdl-card__supporting-text .mdl-radio {
+      width: 100%;
+      margin-bottom: 10px; }
+  #reservations .mdl-card__supporting-text ~ .mdl-card__supporting-text {
+    border-top: 1px solid #F0F0F0; }
+
+/************************
+Images Section
+************************/
+#images .section-hero {
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/big-yosemite.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5px; }
+
+#images #images-social-container {
+  height: auto;
+  background-color: #EBEBEB;
+  padding: 30px 0; }
+  #images #images-social-container h2 {
+    padding-top: 50px;
+    margin-top: 0;
+    color: black; }
+  #images #images-social-container a {
+    width: 30%;
+    margin: 0; }
+  #images #images-social-container #images-social {
+    padding-bottom: 50px; }
+
+#freewall {
+  width: 100%;
+  height: auto; }
+  #freewall .cell {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.25s ease;
+    -webkit-filter: grayscale(0.9); }
+    #freewall .cell:hover {
+      -webkit-transform: scale(1.2);
+      z-index: 1000000;
+      -webkit-filter: grayscale(0); }
+
+/************************
+Footer Section
+************************/
+footer h1.mdl-mega-footer__heading {
+  font-weight: 300 !important; }
+
 /************************
 Universal Styles
 ************************/
@@ -10589,8 +10956,11 @@ section {
   height: 100%; }
 
 .section-container {
+  margin: 0 10%; }
+
+.section-container-full,
+.section-container {
   padding: 60px 0 30px 0;
-  margin: 0 10%;
   height: 100%; }
 
 .section-hero {
@@ -10617,62 +10987,16 @@ h1, h2 {
   font-weight: 100;
   letter-spacing: normal; }
 
-/************************
-Hero Section
-************************/
-.hero {
-  position: relative;
-  height: 550px;
-  background-size: cover;
-  background-position: center;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/big-yosemite-3.jpeg") no-repeat;
-  padding: 100px 0 0 0; }
-  .hero .hero__fab-container {
+.mdl-layout-title {
+  height: 150px;
+  background-color: #EBEBEB; }
+  .mdl-layout-title span {
     position: absolute;
-    bottom: -28.5px;
-    left: 0; }
-
-/************************
-Explore Section
-************************/
-#explore .mdl-card {
-  width: 100%; }
-  #explore .mdl-card .mdl-card__title {
-    height: 180px; }
-
-#explore #hiking > .mdl-card__title {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/hiking.jpg") no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-#explore #skiing > .mdl-card__title {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../img/skiing.jpg") no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-#explore #camping > .mdl-card__title {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url("../img/camping.jpg") no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-/************************
-Reservations Section
-************************/
-#reservations .section-hero {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/reservations-hero.jpg) no-repeat;
-  background-position: center;
-  background-size: cover; }
-
-#reservations .mdl-card__title-text {
-  font-weight: 400;
-  margin-bottom: 24px;
-  color: #757575; }
-
-#reservations .mdl-card__supporting-text {
-  padding: 40px;
-  width: 100%; }
-  #reservations .mdl-card__supporting-text h3 {
-    color: black; }
-
-#reservations .mdl-card__supporting-text ~ .mdl-card__supporting-text {
-  border-top: 1px solid #F0F0F0; }
+    font-weight: 300;
+    font-size: 1em;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 10px 10px 10px 30px;
+    text-align: left;
+    line-height: 1.5em; }

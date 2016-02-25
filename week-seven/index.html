@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" type="text/css">
-    
+       
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -24,29 +26,47 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
                 <nav class="mdl-navigation mdl-layout--large-screen-only">
-                    <a class="mdl-navigation__link mdl-color-text--black" href="#about">Explore</a>
-                    <a class="mdl-navigation__link mdl-color-text--black" href="">Link</a>
-                    <a class="mdl-navigation__link mdl-color-text--black" href="">Link</a>
-                    <a class="mdl-navigation__link mdl-color-text--black" href="">Link</a>
+                    <a class="mdl-navigation__link mdl-color-text--black" href="#home">Home</a>
+                    <a class="mdl-navigation__link mdl-color-text--black" href="#explore">Explore</a>
+                    <a class="mdl-navigation__link mdl-color-text--black" href="#reservations">Plan Your Trip</a>
+                    <a class="mdl-navigation__link mdl-color-text--black" href="#images">See Yosemite</a>
                 </nav>
                 
                 <div class="mdl-layout-spacer"></div>
             </div>
         </header>
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Yosemite National Park</span>
+            <div class="mdl-layout-title mdl-typography--text-center">
+                <span>Yosemite National Park</span>
+            </div>
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="#about">Explore</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="#home">Home</a>
+                <a class="mdl-navigation__link" href="#explore">Explore</a>
+                <a class="mdl-navigation__link" href="#reservations">Plan Your Trip</a>
+                <a class="mdl-navigation__link" href="#images">See Yosemite</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
             <div class="page-content">
-                <section class="hero mdl-grid">
+                <!-- Hero -->
+                <section class="hero mdl-grid" id="home">
                     <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop mdl-cell--12-col-tablet">
                         <h1 class="mdl-typography--text-center">Yosemite National Park</h1>
+                        <div class="hero__button-container mdl-typography--text-center">
+                            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--colored mdl-button--raised mdl-button--accent mdl-shadow--4dp" id="hero-menu-upper-left">
+                                  See More
+                            </button>
+                            <ul class="mdl-menu mdl-menu--upper-left mdl-js-menu mdl-js-ripple-effect" for="hero-menu-upper-left">
+                                <li class="mdl-menu__item"><a href="http://twitter.com/home?status=" title="Share on Twitter" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                <li class="mdl-menu__item"><a href="https://www.facebook.com/sharer/sharer.php?u=" title="Share on Facebook" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li class="mdl-menu__item"><a href="http://instagram.com" title="Share on Instagram" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                            </ul>
+                            
+                            <a href="#images" class="mdl-button mdl-js-button mdl-button" id="flat-hero-button">
+                                See Photos
+                            </a>
+                        </div>
+                            
                     </div>
                     
                     <div class="hero__fab-container mdl-cell mdl-cell--12-col mdl-typography--text-center">
@@ -55,8 +75,9 @@
                         </a>
                     </div>
                 </section>
-                
                 <!-- End Hero -->
+                
+                <!-- Explore -->
                 <section id="explore">
                     <div class="section-container">
                         <div class="mdl-grid">
@@ -73,9 +94,15 @@
                                         <a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> See More</a>
                                     </div>
                                     <div class="mdl-card__menu mdl-color-text--white">
-                                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                            <i class="material-icons">share</i>
+                                        <button id="hiking-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                                            <i class="material-icons">more_vert</i>
                                         </button>
+                                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="hiking-menu-lower-right">
+                                            <li class="mdl-menu__item">More Info</li>
+                                            <li class="mdl-menu__item"><i class="material-icons  mdl-list__item-icon">share</i> Share</li>
+                                            <li disabled class="mdl-menu__item">Disabled Action</li>
+                                            <li class="mdl-menu__item">See All</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -92,9 +119,15 @@
                                         <a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">See More</a>
                                     </div>
                                     <div class="mdl-card__menu mdl-color-text--white">
-                                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                            <i class="material-icons">share</i>
+                                        <button id="skiing-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                                            <i class="material-icons">more_vert</i>
                                         </button>
+                                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="skiing-menu-lower-right">
+                                            <li class="mdl-menu__item">More Info</li>
+                                            <li class="mdl-menu__item"><i class="material-icons  mdl-list__item-icon">share</i> Share</li>
+                                            <li disabled class="mdl-menu__item">Disabled Action</li>
+                                            <li class="mdl-menu__item">See All</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -111,9 +144,15 @@
                                         <a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> See More</a>
                                     </div>
                                     <div class="mdl-card__menu mdl-color-text--white">
-                                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                            <i class="material-icons">share</i>
+                                        <button id="camping-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                                            <i class="material-icons">more_vert</i>
                                         </button>
+                                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="camping-menu-lower-right">
+                                            <li class="mdl-menu__item">More Info</li>
+                                            <li class="mdl-menu__item"><i class="material-icons  mdl-list__item-icon">share</i> Share</li>
+                                            <li disabled class="mdl-menu__item">Disabled Action</li>
+                                            <li class="mdl-menu__item">See All</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -121,9 +160,9 @@
 
                         <div class="mdl-grid hidden mdl-animation--default" id="explore-extra">
                             <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
-                                <div class="mdl-card-wide mdl-card mdl-shadow--2dp" id="hiking">
+                                <div class="mdl-card-wide mdl-card mdl-shadow--2dp" id="events">
                                     <div class="mdl-card__title mdl-color-text--white">
-                                        <h2 class="mdl-card__title-text">Hiking</h2>
+                                        <h2 class="mdl-card__title-text">Events</h2>
                                     </div>
                                     <div class="mdl-card__supporting-text">
                                         Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.
@@ -132,17 +171,23 @@
                                         <a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> See More</a>
                                     </div>
                                     <div class="mdl-card__menu mdl-color-text--white">
-                                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                            <i class="material-icons">share</i>
+                                        <button id="events-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                                            <i class="material-icons">more_vert</i>
                                         </button>
+                                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="events-menu-lower-right">
+                                            <li class="mdl-menu__item">More Info</li>
+                                            <li class="mdl-menu__item"><i class="material-icons  mdl-list__item-icon">share</i> Share</li>
+                                            <li disabled class="mdl-menu__item">Disabled Action</li>
+                                            <li class="mdl-menu__item">See All</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
-                                <div class="mdl-card-wide mdl-card mdl-shadow--2dp" id="skiing">
+                                <div class="mdl-card-wide mdl-card mdl-shadow--2dp" id="rock-climbing">
                                     <div class="mdl-card__title mdl-color-text--white">
-                                        <h2 class="mdl-card__title-text">Skiing</h2>
+                                        <h2 class="mdl-card__title-text">Rock Climbing</h2>
                                     </div>
                                     <div class="mdl-card__supporting-text">
                                         Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.
@@ -151,17 +196,23 @@
                                         <a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">See More</a>
                                     </div>
                                     <div class="mdl-card__menu mdl-color-text--white">
-                                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                            <i class="material-icons">share</i>
+                                        <button id="climbing-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                                            <i class="material-icons">more_vert</i>
                                         </button>
+                                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="climbing-menu-lower-right">
+                                            <li class="mdl-menu__item">More Info</li>
+                                            <li class="mdl-menu__item"><i class="material-icons  mdl-list__item-icon">share</i> Share</li>
+                                            <li disabled class="mdl-menu__item">Disabled Action</li>
+                                            <li class="mdl-menu__item">See All</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet">
-                                <div class="mdl-card-wide mdl-card mdl-shadow--2dp" id="camping">
+                                <div class="mdl-card-wide mdl-card mdl-shadow--2dp" id="biking">
                                     <div class="mdl-card__title mdl-color-text--white">
-                                        <h2 class="mdl-card__title-text">Camping</h2>
+                                        <h2 class="mdl-card__title-text">Biking</h2>
                                     </div>
                                     <div class="mdl-card__supporting-text">
                                         Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra.
@@ -170,9 +221,15 @@
                                         <a href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> See More</a>
                                     </div>
                                     <div class="mdl-card__menu mdl-color-text--white">
-                                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                            <i class="material-icons">share</i>
+                                        <button id="biking-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                                            <i class="material-icons">more_vert</i>
                                         </button>
+                                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="biking-menu-lower-right">
+                                            <li class="mdl-menu__item">More Info</li>
+                                            <li class="mdl-menu__item"><i class="material-icons  mdl-list__item-icon">share</i> Share</li>
+                                            <li disabled class="mdl-menu__item">Disabled Action</li>
+                                            <li class="mdl-menu__item">See All</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -185,20 +242,22 @@
                         </a>
                     </div>
                 </section>
+                <!-- End Explore -->
                 
+                <!-- Reservations -->
                 <section class="secondary" id="reservations">
                     <div class="section-hero mdl-typography--text-center">
                         <h2>Plan For Your Trip</h2>
                     </div>
-                    <div class="section-container">
+                    <div class="section-container-full mdl-cell mdl-cell--10-col-desktop mdl-cell--1-offset-desktop mdl-cell--12-col">
                         <div class="mdl-tabs mdl-js-tabs">
                             <div class="mdl-tabs__tab-bar">
                                 <a href="#tab1-panel" class="mdl-tabs__tab is-active">Planning Guide</a>
                                 <a href="#tab2-panel" class="mdl-tabs__tab">Accommodations</a>
-                                <a href="#tab3-panel" class="mdl-tabs__tab">Make a Reservation</a>
+                                <a href="#tab3-panel" class="mdl-tabs__tab">Reservations</a>
                             </div>
                             <div class="mdl-tabs__panel is-active" id="tab1-panel">
-                                <div class="mdl-cell mdl-cell--12-col mdl-card--expand mdl-card mdl-shadow--2dp" id="hiking">
+                                <div class="mdl-cell mdl-cell--12-col mdl-cell--10-col-desktop mdl-cell--1-offset-desktop mdl-card--expand mdl-card mdl-shadow--2dp" id="hiking">
                                     <div class="mdl-card__supporting-text">
                                         <h3>Planning Guide</h3>
                                         <h4 class="mdl-card__title-text">Pick Your Perfect Day for a Trip to Yosemite</h4>
@@ -224,10 +283,16 @@
                                         <h4 class="mdl-card__title-text"><a href="#">Family Fun</a></h4>
                                         <p>You and your young one will have a blast in Yosemite!  The fun starts with an outdoor theatrical performance just for families.  Then jump on some rental bikes to explore Yosemite Valley--you never know what you might find!</p>
                                     </div>
-                                    <div class="mdl-card__menu mdl-color-text--white">
-                                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                            <i class="material-icons">share</i>
+                                    <div class="mdl-card__menu">
+                                        <button id="planning-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                                            <i class="material-icons">more_vert</i>
                                         </button>
+                                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="planning-menu-lower-right">
+                                            <li class="mdl-menu__item">More Info</li>
+                                            <li class="mdl-menu__item"><i class="material-icons  mdl-list__item-icon">share</i> Share</li>
+                                            <li disabled class="mdl-menu__item">Disabled Action</li>
+                                            <li class="mdl-menu__item">See All</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -293,44 +358,192 @@
                                             </tbody>
                                         </table> 
                                     </div>
-                                    <div class="mdl-card__menu mdl-color-text--white">
-                                        <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                                            <i class="material-icons">share</i>
+                                    <div class="mdl-card__menu">
+                                        <button id="accommodations-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                                            <i class="material-icons">more_vert</i>
                                         </button>
+                                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accommodations-menu-lower-right">
+                                            <li class="mdl-menu__item">More Info</li>
+                                            <li class="mdl-menu__item"><i class="material-icons  mdl-list__item-icon">share</i> Share</li>
+                                            <li disabled class="mdl-menu__item">Disabled Action</li>
+                                            <li class="mdl-menu__item">See All</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="mdl-tabs__panel" id="tab3-panel">
-                                <div class="mdl-grid">
-                                    <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset mdl-cell--12-col-phone">
+                                <div class="mdl-cell mdl-cell--12-col mdl-cell--10-col-desktop mdl-cell--1-offset-desktop mdl-card--expand mdl-card mdl-shadow--2dp" id="hiking">
+                                    <div class="mdl-card__supporting-text">
                                         <h3>Make a Reservation</h3>
+                                        <h4 class="mdl-card__title-text">Start Your Planning Now</h4>
+                                        <p>Within Yosemite National Park, you’ll find a variety of accommodations from AAA Four-Diamond elegance to comfortable lodges and historic cabins, many of which offer value-added Yosemite vacation packages and specials throughout the year to make your experience in the Park even more memorable. </p>
+                                    </div>
+                                    <div class="mdl-card__supporting-text">
+                                        <h4 class="mdl-card__title-text">Reservation Information</h4>
+                                        <p>Give us as much information as possible about your trip to Yosemite National Park, and we'll help you with lodging.</p>
                                         <form action="#">
-                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                <input class="mdl-textfield__input" type="text" id="firstName">
-                                                <label class="mdl-textfield__label" for="firstName">First Name</label>
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="nameInput">
+                                                <input class="mdl-textfield__input" type="text" id="name">
+                                                <label class="mdl-textfield__label" for="name">Name</label>
                                             </div>
                                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                                                <input type="text" class="mdl-textfield__input" required="true" id="lastName">
-                                                <label for="lastName" class="mdl-textfield__label">Last Name</label>
+                                                <input type="text" class="mdl-textfield__input" required="true" id="checkIn">
+                                                <label for="checkIn" class="mdl-textfield__label">Check-In Date</label>
                                             </div>
-                                            <div id="date_container" class="mdl-textfield mdl-js-textfield">
-                                                <input class="mdl-textfield__input" type="text" id="date" readonly />
-                                                <label class="mdl-textfield__label" id="date_label" for="date">Date</label>
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <input type="text" class="mdl-textfield__input" required="true" id="checkOut">
+                                                <label for="checkOut" class="mdl-textfield__label">Check-Out Date</label>
+                                            </div>
+                                            <div class="mdl-cell mdl-cell--12-col">
+                                                <h4>Accommodation Selection</h4>
+                                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="ahwahnee">
+                                                    <input type="radio" id="ahwahnee" class="mdl-radio__button" name="options" value="1">
+                                                    <span class="mdl-radio__label">The Ahwahnee</span>
+                                                </label>
+                                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="scenicWonders">
+                                                    <input type="radio" id="scenicWonders" class="mdl-radio__button" name="options" value="2">
+                                                    <span class="mdl-radio__label">Scenic Wonders</span>
+                                                </label>
+                                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="paradise">
+                                                    <input type="radio" id="paradise" class="mdl-radio__button" name="options" value="3">
+                                                    <span class="mdl-radio__label">Places in Paradise</span>
+                                                </label> 
+                                                <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="pinetree">
+                                                    <input type="radio" id="pinetree" class="mdl-radio__button" name="options" value="4">
+                                                    <span class="mdl-radio__label">Pinetree Retreat</span>
+                                                </label>   
+                                            </div>
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <input type="text" class="mdl-textfield__input" required="true" id="email">
+                                                <label for="email" class="mdl-textfield__label">E-mail Address</label>
+                                            </div>
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <input type="text" class="mdl-textfield__input" id="phone">
+                                                <label for="phone" class="mdl-textfield__label">Phone Number</label>
+                                            </div>
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                                <input type="text" class="mdl-textfield__input" required="true" id="budget">
+                                                <label for="budget" class="mdl-textfield__label">Price Range</label>
+                                            </div>
+                                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--full-width mdl-textfield--floating-label">
+                                                <textarea class="mdl-textfield__input" type="text" rows= "4" id="otherInfo" ></textarea>
+                                                <label class="mdl-textfield__label" for="otherInfo">Other Information...</label>
+                                            </div>
+                                            <div class="mdl-textfield mdl-js-textfield">
+                                                <input type="submit" id="submit" title="Submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
                                             </div>
                                         </form>
+                                    </div>
+                                    <div class="mdl-card__actions mdl-card--border">
+                                        
+                                    </div>
+                                    <div class="mdl-card__menu">
+                                        <button id="reservations-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+                                            <i class="material-icons">more_vert</i>
+                                        </button>
+                                        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="reservations-menu-lower-right">
+                                            <li class="mdl-menu__item">More Info</li>
+                                            <li class="mdl-menu__item"><i class="material-icons  mdl-list__item-icon">share</i> Share</li>
+                                            <li disabled class="mdl-menu__item">Disabled Action</li>
+                                            <li class="mdl-menu__item">See All</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>    
+                </section>
+                <!-- End Reservations -->
+                
+                <!-- Images -->
+                <section id="images">
+                    <div class="section-hero mdl-typography--text-center">
+                        <h2>View the Beauty of Yosemite</h2>
+                    </div>
+                    <div id="freewall">
+                    </div>
+                    <div class="mdl-typography--text-center" id="images-social-container">
+                        <h2>Share Your Photos with #Yosemite</h2>
+                        <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--3-offset-desktop mdl-cell--12-col" id="images-social">
+                            <a href="http://twitter.com/home?status=" title="Share on Twitter" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--twitter"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=" title="Share on Facebook" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--facebook"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
+                            <a href="https://www.instagram.com" title="Share on Instagram" target="_blank" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--instagram"><i class="fa fa-instagram fa-fw"></i> Instagram</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Images -->
+                
+                <!-- Footer -->
+                <footer class="mdl-mega-footer">
+                    <div class="mdl-mega-footer__middle-section mdl-cell mdl-cell--12-col mdl-cell--8-col-desktop mdl-cell--2-offset-desktop">
+
+                        <div class="mdl-mega-footer__drop-down-section">
+                            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                            <h1 class="mdl-mega-footer__heading">Navigation</h1>
+                            <ul class="mdl-mega-footer__link-list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Explore</a></li>
+                                <li><a href="#">Plan</a></li>
+                                <li><a href="#">View Yosemite</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mdl-mega-footer__drop-down-section">
+                            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                            <h1 class="mdl-mega-footer__heading">Accommodations</h1>
+                            <ul class="mdl-mega-footer__link-list">
+                                <li><a href="#">The Ahwahnee</a></li>
+                                <li><a href="#">Scenic Wonders</a></li>
+                                <li><a href="#">Places in Paradise</a></li>
+                                <li><a href="#">Pinetree Retreat</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mdl-mega-footer__drop-down-section">
+                            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                            <h1 class="mdl-mega-footer__heading">Explore Yosemite</h1>
+                            <ul class="mdl-mega-footer__link-list">
+                                <li><a href="#">Hiking</a></li>
+                                <li><a href="#">Skiing</a></li>
+                                <li><a href="#">Camping</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">Rock Climbing</a></li>
+                                <li><a href="#">Biking</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mdl-mega-footer__drop-down-section">
+                            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                            <h1 class="mdl-mega-footer__heading">FAQ</h1>
+                            <ul class="mdl-mega-footer__link-list">
+                                <li><a href="#">Questions</a></li>
+                                <li><a href="#">Answers</a></li>
+                                <li><a href="#">Contact us</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="mdl-mega-footer__bottom-section mdl-cell mdl-cell--12-col mdl-cell--8-col-desktop mdl-cell--2-offset-desktop">
+                        <div class="mdl-logo">Yosemite National Park</div>
+                        <ul class="mdl-mega-footer__link-list">
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Privacy &amp; Terms</a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+
+                </footer>  
+                <!-- End Footer -->
             </div>
         </main>
     </div>
     
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script src="./node_modules/moment/moment.js"></script>
+    <script src="./assets/js/freewall.js"></script>
     <script src="./node_modules/material-design-lite/material.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>

@@ -1,0 +1,63 @@
+/************************
+Explore Section
+************************/
+
+#explore {
+    
+    .mdl-card {
+        width: 100%;
+        
+        .mdl-card__title {
+            height: 180px;
+        }
+    }
+    
+    #hiking > .mdl-card__title {
+        background:
+            -webkit-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+            url('../img/hiking.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #skiing > .mdl-card__title {
+        background:
+            -webkit-linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)),
+            url('../img/skiing.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #camping > .mdl-card__title {
+        background:
+            -webkit-linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)),
+            url('../img/camping.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #events > .mdl-card__title {
+        background: 
+            -webkit-linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+            url('../img/events.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #biking > .mdl-card__title {
+        background: 
+            -webkit-linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+            url('../img/biking.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #rock-climbing > .mdl-card__title {
+        background: 
+            -webkit-linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+            url('../img/rock-climbing.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+}

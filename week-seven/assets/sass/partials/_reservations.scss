@@ -1,0 +1,48 @@
+/************************
+Reservations Section
+************************/
+
+#reservations {
+    padding-bottom: 30px;
+    
+    .section-hero {
+        background: 
+            -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+            url(../img/reservations-hero.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .mdl-card__title-text {
+        font-weight: 400;
+        margin-bottom: 24px;
+        color: $light-black-header;
+    }
+    
+    .mdl-card__supporting-text {
+        padding: 40px;
+        width: 100%;
+        
+        h3 {
+            color: $color-black;
+            margin-top: 0;
+        }
+        
+        .mdl-textfield {
+            margin: 10px 10px 10px 0;
+            
+            &#nameInput {
+                display: block;
+            }
+        }
+        
+        .mdl-radio {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .mdl-card__supporting-text ~ .mdl-card__supporting-text {
+        border-top: 1px solid $light-border-color;
+    }
+}

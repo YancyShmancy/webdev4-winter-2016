@@ -1,0 +1,46 @@
+
+/************************
+Hero Section
+************************/
+
+.hero {
+    position: relative;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    background:
+        -webkit-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url('../img/big-yosemite-3.jpeg') no-repeat;
+    padding: 100px 0 0 0;
+    
+    .hero__fab-container {
+        position: absolute;
+        bottom: -28.5px;
+        left: 0;
+    }
+    
+    .hero__button-container {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+    }
+    
+    #flat-hero-button {
+        color: $color-white;
+        font-weight: 300;
+        text-transform: capitalize;
+    }
+    
+    .mdl-menu {
+        
+        a {
+            text-decoration: none;
+            color: $color-black;
+            
+            i {
+                padding: 0 10px 0 0;
+            }
+        }
+    }
+}

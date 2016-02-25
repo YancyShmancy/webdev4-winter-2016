@@ -1,5 +1,11 @@
 @import "../../node_modules/material-design-lite/src/material-design-lite";
 @import "partials/colors";
+@import "partials/social-buttons";
+@import "partials/home";
+@import "partials/explore";
+@import "partials/reservations";
+@import "partials/images";
+@import "partials/footer";
 
 /************************
 Universal Styles
@@ -18,8 +24,12 @@ section {
 }
 
 .section-container {
+    margin: 0 10%; 
+}
+
+.section-container-full,
+.section-container {
     padding: 60px 0 30px 0;
-    margin: 0 10%;
     height: 100%;
 }
 
@@ -52,99 +62,19 @@ h1, h2 {
     letter-spacing: normal;
 }
 
-
-/************************
-Hero Section
-************************/
-
-.hero {
-    position: relative;
-    height: 550px;
-    background-size: cover;
-    background-position: center;
-    background:
-        -webkit-linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url('../img/big-yosemite-3.jpeg') no-repeat;
-    padding: 100px 0 0 0;
+.mdl-layout-title {
+    height: 150px;
+    background-color: $section-secondary-background;
     
-    .hero__fab-container {
+    span {
         position: absolute;
-        bottom: -28.5px;
+        font-weight: 300;
+        font-size: 1em;
+        bottom: 0;
+        width: 100%;
         left: 0;
+        padding: 10px 10px 10px 30px;
+        text-align: left;
+        line-height: 1.5em;
     }
 }
-
-/************************
-Explore Section
-************************/
-
-#explore {
-    
-    .mdl-card {
-        width: 100%;
-        
-        .mdl-card__title {
-            height: 180px;
-        }
-    }
-    
-    #hiking > .mdl-card__title {
-        background:
-            -webkit-linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-            url('../img/hiking.jpg') no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    
-    #skiing > .mdl-card__title {
-        background:
-            -webkit-linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)),
-            url('../img/skiing.jpg') no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    
-    #camping > .mdl-card__title {
-        background:
-            -webkit-linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)),
-            url('../img/camping.jpg') no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-}
-
-
-/************************
-Reservations Section
-************************/
-
-#reservations {
-    
-    .section-hero {
-        background: 
-            -webkit-linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
-            url(../img/reservations-hero.jpg) no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    
-    .mdl-card__title-text {
-        font-weight: 400;
-        margin-bottom: 24px;
-        color: $light-black-header;
-    }
-    
-    .mdl-card__supporting-text {
-        padding: 40px;
-        width: 100%;
-        
-        h3 {
-            color: $color-black;
-        }
-    }
-    
-    .mdl-card__supporting-text ~ .mdl-card__supporting-text {
-        border-top: 1px solid $light-border-color;
-    }
-}
-
